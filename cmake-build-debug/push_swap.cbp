@@ -96,6 +96,9 @@
 		<Unit filename="/Users/ymanilow/curcus42/push_swap/push_swap.h">
 			<Option target="push_swap"/>
 		</Unit>
+		<Unit filename="/Users/ymanilow/curcus42/push_swap/useful_functions_forstack.c">
+			<Option target="push_swap"/>
+		</Unit>
 		<Unit filename="/Users/ymanilow/curcus42/push_swap/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

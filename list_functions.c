@@ -1,32 +1,20 @@
 //
 // Created by Yaxley Manilow on 03/09/2019.
-//A
+//
 
 #include "push_swap.h"
 
-void			ft_list_delete(t_stack *head)
-{
-	t_stack *tmp;
 
-	while (head)
-	{
-		tmp = head;
-		head = head->next;
-		free(tmp);
-	}
-	free(head);
+t_stacks		*ft_struct_create()
+{
+	t_stacks *point;
+
+	if (!(point = malloc(sizeof(t_stacks))))
+		return (NULL);
+	return (point);
 }
 
-void			ft_list_add(t_stack **stack, t_stack *new)
-{
-	if (stack && new)
-	{
-		new->next = *stack;
-		*stack = new;
-	}
-}
-
-t_stack			*ft_list_create(int a)
+t_stack			*ft_listofstack_create(int a)
 {
 	t_stack *stack;
 
@@ -37,38 +25,17 @@ t_stack			*ft_list_create(int a)
 	return (stack);
 }
 
-int				ft_check_lenght_of_list(t_stack *stack)
+void			ft_list_delete(t_stacks *point)
 {
-	int		i;
+	t_stack *tmp;
 
-	i = 0;
-	if (stack)
+	while (point->head)
 	{
-		while (stack->next)
-		{
-			stack = stack->next;
-			i++;
-		}
-		if (stack)
-			i++;
+		tmp = point->head;
+		point->head = point->head->next;
+		free(tmp);
 	}
-	return (i);
+	free(point->head);
+	free(point);
 }
 
-void			ft_print_list(t_stack *stack, int ln)
-{
-	int i;
-
-	i = 0;
-	if (stack)
-	{
-		while (i < ln)
-		{
-			printf("%d\n", stack->num);
-			if (stack->next)
-				stack = stack->next;
-			i++;
-		}
-		printf("end of stack\n");
-	}
-}

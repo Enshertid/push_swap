@@ -204,6 +204,33 @@ operations.c.s:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/operations.c.s
 .PHONY : operations.c.s
 
+useful_functions_forstack.o: useful_functions_forstack.c.o
+
+.PHONY : useful_functions_forstack.o
+
+# target to build an object file
+useful_functions_forstack.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/useful_functions_forstack.c.o
+.PHONY : useful_functions_forstack.c.o
+
+useful_functions_forstack.i: useful_functions_forstack.c.i
+
+.PHONY : useful_functions_forstack.i
+
+# target to preprocess a source file
+useful_functions_forstack.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/useful_functions_forstack.c.i
+.PHONY : useful_functions_forstack.c.i
+
+useful_functions_forstack.s: useful_functions_forstack.c.s
+
+.PHONY : useful_functions_forstack.s
+
+# target to generate assembly for a file
+useful_functions_forstack.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/useful_functions_forstack.c.s
+.PHONY : useful_functions_forstack.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -222,6 +249,9 @@ help:
 	@echo "... operations.o"
 	@echo "... operations.i"
 	@echo "... operations.s"
+	@echo "... useful_functions_forstack.o"
+	@echo "... useful_functions_forstack.i"
+	@echo "... useful_functions_forstack.s"
 .PHONY : help
 
 

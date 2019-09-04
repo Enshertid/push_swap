@@ -23,13 +23,26 @@ typedef struct s_stack
 	struct s_stack	*next;
 }	t_stack;
 
-void				ft_list_delete(t_stack *head);
-void				ft_list_add(t_stack **stack, t_stack *new);
-void				ft_print_list(t_stack *stack, int ln);
-void				ft_swap_onestack(t_stack **stack);
+typedef struct s_stacks
+{
+	t_stack *head;
+	t_stack *stack_a;
+	t_stack *stack_b;
+} t_stacks;
+
+void				ft_list_delete(t_stacks *point);
+void				ft_stack_list_add(t_stack **stack, t_stack *new);
+void				ft_print_stack(t_stack *stack, int ln);
+void				ft_swap_stack(t_stack **stack);
+void				ft_swap_both(t_stack **stack_a, t_stack **stack_b);
 void				ft_push_stack(t_stack **stack_a, t_stack **stack_b);
-int					ft_check_lenght_of_list(t_stack *stack);
-t_stack				*ft_list_create(int a);
+void				ft_rotate_stack(t_stack **head);
+void				ft_rotate_all(t_stack **stack_a, t_stack **stack_b);
+void				ft_reverse_rotate(t_stack **head);
+void				ft_reverse_all(t_stack **stack_a, t_stack **stack_b);
+int					ft_check_lenght_of_stack(t_stack *stack);
+t_stack				*ft_listofstack_create(int a);
+t_stacks			*ft_struct_create();
 
 
 #endif

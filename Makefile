@@ -6,7 +6,7 @@
 #    By: ymanilow <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/04 11:41:35 by ymanilow          #+#    #+#              #
-#    Updated: 2019/09/04 12:42:36 by ymanilow         ###   ########.fr        #
+#    Updated: 2019/09/04 16:05:12 by ymanilow         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,6 +14,7 @@ NAME = push_swap
 
 SRCS_C = ./main.c\
 		 ./list_functions.c\
+		 ./useful_functions_forstack.c\
 		 ./operations.c\
 
 SRCS_CO = $(SRCS_C:.c=.o)\

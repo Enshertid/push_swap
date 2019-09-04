@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/ymanilow/curcus42/push_swap/list_functions.c" "/Users/ymanilow/curcus42/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/list_functions.c.o"
   "/Users/ymanilow/curcus42/push_swap/main.c" "/Users/ymanilow/curcus42/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/main.c.o"
   "/Users/ymanilow/curcus42/push_swap/operations.c" "/Users/ymanilow/curcus42/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/operations.c.o"
+  "/Users/ymanilow/curcus42/push_swap/useful_functions_forstack.c" "/Users/ymanilow/curcus42/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/useful_functions_forstack.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

@@ -14,21 +14,17 @@
 
 int main()
 {
-	t_stack		*head;
-	t_stack		*stack_a;
-	t_stack		*stack_b;
+	t_stacks *point;
 	int			array[10] = {0,1,2,3,4,5,6,7,8,9};
 	int			i;
 
-	stack_b = NULL;
-	stack_a = ft_list_create(array[0]);
+	point = ft_struct_create();
+	point->stack_a = ft_listofstack_create(array[0]);
 	i = 1;
 	while (i < 10)
-		ft_list_add(&stack_a, ft_list_create(array[i++]));
-	head = stack_a;
-	ft_print_list(stack_a, ft_check_lenght_of_list(stack_a));
-	ft_print_list(stack_b, ft_check_lenght_of_list(stack_b));
-	ft_list_delete(head);
+		ft_stack_list_add(&point->stack_a, ft_listofstack_create(array[i++]));
+	point->head = point->stack_a;
+	ft_list_delete(point);
 	printf("Hello, World!\n");
 	return 0;
 }

@@ -9,3 +9,7 @@ CMakeFiles/push_swap.dir/main.c.o: ../libft/includes/libft.h
 CMakeFiles/push_swap.dir/main.c.o: ../main.c
 CMakeFiles/push_swap.dir/main.c.o: ../push_swap.h
 
+CMakeFiles/push_swap.dir/operations.c.o: ../libft/includes/libft.h
+CMakeFiles/push_swap.dir/operations.c.o: ../operations.c
+CMakeFiles/push_swap.dir/operations.c.o: ../push_swap.h
+
