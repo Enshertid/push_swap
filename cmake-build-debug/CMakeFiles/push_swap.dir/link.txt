@@ -1,1 +1,1 @@
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/push_swap.dir/main.c.o  -o push_swap 
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/push_swap.dir/main.c.o CMakeFiles/push_swap.dir/list_functions.c.o CMakeFiles/push_swap.dir/operations.c.o  -o push_swap 

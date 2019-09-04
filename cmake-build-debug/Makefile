@@ -123,6 +123,33 @@ push_swap/fast:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/build
 .PHONY : push_swap/fast
 
+list_functions.o: list_functions.c.o
+
+.PHONY : list_functions.o
+
+# target to build an object file
+list_functions.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/list_functions.c.o
+.PHONY : list_functions.c.o
+
+list_functions.i: list_functions.c.i
+
+.PHONY : list_functions.i
+
+# target to preprocess a source file
+list_functions.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/list_functions.c.i
+.PHONY : list_functions.c.i
+
+list_functions.s: list_functions.c.s
+
+.PHONY : list_functions.s
+
+# target to generate assembly for a file
+list_functions.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/list_functions.c.s
+.PHONY : list_functions.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -150,6 +177,33 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/main.c.s
 .PHONY : main.c.s
 
+operations.o: operations.c.o
+
+.PHONY : operations.o
+
+# target to build an object file
+operations.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/operations.c.o
+.PHONY : operations.c.o
+
+operations.i: operations.c.i
+
+.PHONY : operations.i
+
+# target to preprocess a source file
+operations.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/operations.c.i
+.PHONY : operations.c.i
+
+operations.s: operations.c.s
+
+.PHONY : operations.s
+
+# target to generate assembly for a file
+operations.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/operations.c.s
+.PHONY : operations.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -159,9 +213,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... push_swap"
+	@echo "... list_functions.o"
+	@echo "... list_functions.i"
+	@echo "... list_functions.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... operations.o"
+	@echo "... operations.i"
+	@echo "... operations.s"
 .PHONY : help
 
 

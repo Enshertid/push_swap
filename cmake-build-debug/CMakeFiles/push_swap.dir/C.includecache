@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ymanilow/curcus42/push_swap/libft/includes/libft.h
+stdlib.h
+-
+unistd.h
+-
+stdio.h
+-
+string.h
+-
+
+/Users/ymanilow/curcus42/push_swap/list_functions.c
+push_swap.h
+/Users/ymanilow/curcus42/push_swap/push_swap.h
+
+/Users/ymanilow/curcus42/push_swap/main.c
+push_swap.h
+/Users/ymanilow/curcus42/push_swap/push_swap.h
+
+/Users/ymanilow/curcus42/push_swap/push_swap.h
+libft/includes/libft.h
+/Users/ymanilow/curcus42/push_swap/libft/includes/libft.h
+stdio.h
+-
+stdlib.h
+-
+
