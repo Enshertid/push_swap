@@ -14,17 +14,17 @@
 
 int main()
 {
-	t_stacks *point;
+	t_stacks	*point;
 	int			array[10] = {0,1,2,3,4,5,6,7,8,9};
 	int			i;
 	int			fd;
 	char		*line;
 
 	line = NULL;
-	fd = open("Users/ymanilow/curcus42/file.txt", O_RDWR);
-	if (fd > 0)
+	fd = open("/Users/ymanilow/curcus42/push_swap/file.txt", O_RDONLY);
+	if (fd != 0)
 	{
-		ft_get_next_line(fd, &line);
+		get_next_line(fd, &line);
 		printf("%s", line);
 		free(line);
 	}

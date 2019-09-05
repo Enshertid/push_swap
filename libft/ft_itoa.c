@@ -3,55 +3,34 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dbendu <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: dbendu <dbendu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/08 20:14:35 by dbendu            #+#    #+#             */
-/*   Updated: 2019/04/08 20:14:36 by dbendu           ###   ########.fr       */
+/*   Created: 2019/08/04 19:51:34 by user              #+#    #+#             */
+/*   Updated: 2019/08/24 15:43:57 by dbendu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void		ft_isnegative_topos(long long int *num, size_t *is_negative)
+char	*ft_itoa(__int128_t num, char *str, unsigned base, unsigned is_upper)
 {
-	if (*num < 0)
+	const char	*alphabet = is_upper ? "0123456789ABCDEF" : "0123456789abcdef";
+	char		*iter;
+
+	iter = str;
+	if (base == 10 && num < 0)
 	{
-		*is_negative = 1;
-		*num = -*num;
+		*iter++ = '-';
+		num = -num;
 	}
-	else
-		*is_negative = 0;
-}
-
-static size_t	ft_size_of_num(long long int n)
-{
-	size_t size;
-
-	size = 0;
-	while (n /= 10)
-		++size;
-	return (size + 1);
-}
-
-char			*ft_itoa(long long int num)
-{
-	register char	*str;
-	register size_t	size;
-	size_t			sign;
-
-	if (num == (-LLONG_MAX - 1LL))
-		return (ft_strdup("-9223372036854775808"));
-	size = ft_size_of_num(num) + 1 + (num < 0);
-	ft_isnegative_topos(&num, &sign);
-	if (!(str = (char*)malloc(size)))
-		return (NULL);
-	str[--size] = '\0';
-	while (size--)
+	if (!num)
+		*iter++ = '0';
+	while (num)
 	{
-		str[size] = (num % 10 + 48);
-		num /= 10;
+		*iter++ = alphabet[num % base];
+		num /= base;
 	}
-	if (sign)
-		str[0] = '-';
+	*iter = '\0';
+	ft_strrev(str + (*str == '-'));
 	return (str);
 }

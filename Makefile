@@ -24,7 +24,7 @@ all: $(NAME)
 
 $(NAME):
 	make -C ./libft/
-	gcc -Wall -Werror -Wextra -Ipush_swap.h $(SRCS_C) -o push_swap
+	gcc -Wall -Werror -Wextra -Ipush_swap.h ./libft/libft.a $(SRCS_C) -o push_swap
 
 clean:
 	@make clean -C ./libft/

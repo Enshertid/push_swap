@@ -124,6 +124,7 @@ push_swap: CMakeFiles/push_swap.dir/list_functions.c.o
 push_swap: CMakeFiles/push_swap.dir/operations.c.o
 push_swap: CMakeFiles/push_swap.dir/useful_functions_forstack.c.o
 push_swap: CMakeFiles/push_swap.dir/build.make
+push_swap: ../libft/libft.a
 push_swap: CMakeFiles/push_swap.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ymanilow/curcus42/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable push_swap"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/push_swap.dir/link.txt --verbose=$(VERBOSE)
