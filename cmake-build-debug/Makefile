@@ -123,6 +123,33 @@ push_swap/fast:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/build
 .PHONY : push_swap/fast
 
+checker.o: checker.c.o
+
+.PHONY : checker.o
+
+# target to build an object file
+checker.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/checker.c.o
+.PHONY : checker.c.o
+
+checker.i: checker.c.i
+
+.PHONY : checker.i
+
+# target to preprocess a source file
+checker.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/checker.c.i
+.PHONY : checker.c.i
+
+checker.s: checker.c.s
+
+.PHONY : checker.s
+
+# target to generate assembly for a file
+checker.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/checker.c.s
+.PHONY : checker.c.s
+
 list_functions.o: list_functions.c.o
 
 .PHONY : list_functions.o
@@ -240,6 +267,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... push_swap"
+	@echo "... checker.o"
+	@echo "... checker.i"
+	@echo "... checker.s"
 	@echo "... list_functions.o"
 	@echo "... list_functions.i"
 	@echo "... list_functions.s"

@@ -19,7 +19,7 @@ char	*ft_strjoin(const char *s1, const char *s2)
 
 	if (!s1 && !s2)
 		return (NULL);
-	new_str = ft_strnew(ft_strlen(s1) + ft_strlen(s2) + 1);
+	new_str = ft_strnew(ft_strlen(s1) + ft_strlen(s2));
 	if (!new_str)
 		return (NULL);
 	iter = new_str;

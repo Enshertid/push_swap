@@ -1,27 +1,15 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   checker.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: user <user@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: ymanilow <ymanilow@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/08 20:16:56 by dbendu            #+#    #+#             */
-/*   Updated: 2019/09/02 21:31:12 by user             ###   ########.fr       */
+/*   Created: 2019/09/05 17:55:24 by ymanilow          #+#    #+#             */
+/*   Updated: 2019/09/05 17:55:24 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+//
+// Created by Yaxley Manilow on 05/09/2019.
+//
 
-#include "libft.h"
-
-void	*ft_memchr(const void *memptr, int val, size_t num)
-{
-	register unsigned char *str;
-
-	str = (unsigned char*)memptr;
-	while (num--)
-	{
-		if (*str == (unsigned char)val)
-			return (str);
-		++str;
-	}
-	return (NULL);
-}

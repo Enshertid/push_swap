@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/push_swap.dir/list_functions.c.o"
   "CMakeFiles/push_swap.dir/operations.c.o"
   "CMakeFiles/push_swap.dir/useful_functions_forstack.c.o"
+  "CMakeFiles/push_swap.dir/checker.c.o"
   "push_swap.pdb"
   "push_swap"
 )

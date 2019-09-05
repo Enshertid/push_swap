@@ -84,6 +84,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/ymanilow/curcus42/push_swap/checker.c">
+			<Option target="push_swap"/>
+		</Unit>
 		<Unit filename="/Users/ymanilow/curcus42/push_swap/list_functions.c">
 			<Option target="push_swap"/>
 		</Unit>

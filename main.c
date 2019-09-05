@@ -22,12 +22,6 @@ int main()
 
 	line = NULL;
 	fd = open("/Users/ymanilow/curcus42/push_swap/file.txt", O_RDONLY);
-	if (fd != 0)
-	{
-		get_next_line(fd, &line);
-		printf("%s", line);
-		free(line);
-	}
 	point = ft_struct_create();
 	point->stack_a = ft_listofstack_create(array[0]);
 	i = 1;
