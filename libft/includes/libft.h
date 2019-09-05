@@ -6,7 +6,7 @@
 /*   By: dbendu <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/08 20:28:39 by dbendu            #+#    #+#             */
-/*   Updated: 2019/04/08 20:28:40 by dbendu           ###   ########.fr       */
+/*   Updated: 2019/09/05 10:15:26 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,11 @@
 # include <unistd.h>
 # include <stdio.h>
 # include <string.h>
+# include <sys/types.h>
+# include <sys/stat.h>
+# include <fcntl.h>
 
+# define BUFF_SIZE 100
 # define MAX_INT (2147483647)
 # define MIN_INT (-2147483648)
 # define LLONG_MIN -9223372036854775808
@@ -127,5 +131,7 @@ void				ft_reverse_str(char *str);
 int					ft_tolower(int c);
 int					ft_toupper(int c);
 void				ft_charrdel(char ***arr);
+
+int					ft_get_next_line(int fd, char **line);
 
 #endif
