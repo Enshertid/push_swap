@@ -6,7 +6,7 @@
 #    By: ymanilow <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/04 11:41:35 by ymanilow          #+#    #+#              #
-#    Updated: 2019/09/04 16:05:12 by ymanilow         ###   ########.fr        #
+#    Updated: 2019/09/05 11:01:25 by ymanilow         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,8 +23,8 @@ SRCS_CO = $(SRCS_C:.c=.o)\
 all: $(NAME)
 
 $(NAME):
-	@make -C ./libft/
-	@gcc -Wall -Werror -Wextra -Ilibft/includes/libft.h $(SRCS_C) -o push_swap
+	make -C ./libft/
+	gcc -Wall -Werror -Wextra -Ipush_swap.h $(SRCS_C) -o push_swap
 
 clean:
 	@make clean -C ./libft/

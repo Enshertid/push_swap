@@ -15,16 +15,30 @@ stdio.h
 -
 string.h
 -
+sys/types.h
+-
+sys/stat.h
+-
+fcntl.h
+-
+
+/Users/ymanilow/curcus42/push_swap/list_functions.c
+push_swap.h
+/Users/ymanilow/curcus42/push_swap/push_swap.h
 
 /Users/ymanilow/curcus42/push_swap/main.c
+push_swap.h
+/Users/ymanilow/curcus42/push_swap/push_swap.h
+
+/Users/ymanilow/curcus42/push_swap/operations.c
 push_swap.h
 /Users/ymanilow/curcus42/push_swap/push_swap.h
 
 /Users/ymanilow/curcus42/push_swap/push_swap.h
 libft/includes/libft.h
 /Users/ymanilow/curcus42/push_swap/libft/includes/libft.h
-stdio.h
--
-stdlib.h
--
+
+/Users/ymanilow/curcus42/push_swap/useful_functions_forstack.c
+push_swap.h
+/Users/ymanilow/curcus42/push_swap/push_swap.h
 

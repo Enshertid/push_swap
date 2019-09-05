@@ -6,7 +6,7 @@
 /*   By: dbendu <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/08 20:28:39 by dbendu            #+#    #+#             */
-/*   Updated: 2019/09/05 10:21:44 by ymanilow         ###   ########.fr       */
+/*   Updated: 2019/09/05 13:21:16 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 # include <sys/stat.h>
 # include <fcntl.h>
 
-# define BUFF_SIZE 100
+# define BUFF_SIZE 10
 # define MAX_INT (2147483647)
 # define MIN_INT (-2147483648)
 # define LLONG_MIN -9223372036854775808
@@ -46,6 +46,7 @@ typedef struct		s_dlist
 	struct s_dlist	*end;
 }					t_dlist;
 
+int					ft_get_next_line(int fd, char **line);
 void				ft_lstpop(t_list **list);
 void				ft_lstclear(t_list **list);
 void				ft_lstremove(t_list **list);
@@ -131,7 +132,5 @@ void				ft_reverse_str(char *str);
 int					ft_tolower(int c);
 int					ft_toupper(int c);
 void				ft_charrdel(char ***arr);
-
-int					ft_get_next_line(int fd, char **line);
 
 #endif

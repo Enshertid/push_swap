@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   ft_get_next_line.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ymanilow <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/11 19:28:30 by ymanilow          #+#    #+#             */
-/*   Updated: 2019/09/05 10:23:00 by ymanilow         ###   ########.fr       */
+/*   Updated: 2019/09/05 13:21:19 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char		*ft_str_out_and_del(char *s, char **line)
+static char		*ft_str_out_and_del(char *s, char **line)
 {
 	char		*s1;
 	char		*s2;
@@ -29,7 +29,7 @@ char		*ft_str_out_and_del(char *s, char **line)
 	return (s);
 }
 
-char		*ft_read_out(char *s, int fd)
+static char		*ft_read_out(char *s, int fd)
 {
 	int			ret;
 	char		*s1;

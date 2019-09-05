@@ -1,19 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dbendu <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: ymanilow <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/08 20:13:17 by dbendu            #+#    #+#             */
-/*   Updated: 2019/09/05 13:05:16 by ymanilow         ###   ########.fr       */
+/*   Created: 2019/09/05 11:10:05 by ymanilow          #+#    #+#             */
+/*   Updated: 2019/09/05 11:19:18 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 
-int	ft_isalpha(int c)
+#include "includes/libft.h"
+
+int main()
 {
-	return ((c >= 'a' && c <= 'z') ||
-		(c >= 'A' && c <= 'Z'));
+	int fd;
+	char *line;
+
+	fd = open("file.txt", O_RDWR);
+	ft_get_next_line(fd, &line);
+	return (0);
 }
