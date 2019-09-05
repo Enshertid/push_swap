@@ -6,11 +6,11 @@
 /*   By: ymanilow <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/11 19:28:30 by ymanilow          #+#    #+#             */
-/*   Updated: 2019/09/05 10:15:15 by ymanilow         ###   ########.fr       */
+/*   Updated: 2019/09/05 10:23:00 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "libft.h"
 
 char		*ft_str_out_and_del(char *s, char **line)
 {

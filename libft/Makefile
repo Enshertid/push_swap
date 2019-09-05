@@ -19,8 +19,9 @@ SRCS =	ft_min.c			ft_putstr.c			ft_strrchr.c		ft_strncmp.c	\
 		ft_strcat.c			ft_strncpy.c		ft_toupper.c		ft_dlstappend.c	\
 		ft_strdup.c			ft_dlstnew.c		ft_strtrim.c		ft_lstpopback.c	\
 		ft_strclr.c			ft_dlstadd.c		ft_strsplit.c		ft_putchar_fd.c	\
-																	ft_putendl_fd.c	\
-																	ft_reverse_str.c
+		                											ft_putendl_fd.c	\
+																	ft_reverse_str.c\
+																	ft_get_next_line.c
 
 OBJ = $(SRCS:.c=.o)
 
