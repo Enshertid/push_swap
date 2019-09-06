@@ -1,9 +1,0 @@
-Hello, I'm glad to see you in function name
-GET_NEXT_LINE
-
-
-
-
-
-
-its work!
