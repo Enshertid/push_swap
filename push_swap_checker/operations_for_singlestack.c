@@ -2,7 +2,7 @@
 // Created by Yaxley Manilow on 04/09/2019.
 //
 
-#include "push_swap.h"
+#include "checker.h"
 
 void		ft_swap_stack(t_stack **stack)
 {

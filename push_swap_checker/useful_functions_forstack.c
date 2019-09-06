@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "checker.h"
 
 void			ft_stack_list_add(t_stack **stack, t_stack *new)
 {

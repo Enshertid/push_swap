@@ -1,7 +1,11 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/push_swap_checker.dir/library.c.o"
-  "libpush_swap_checker.pdb"
-  "libpush_swap_checker.a"
+  "CMakeFiles/push_swap_checker.dir/checker.c.o"
+  "CMakeFiles/push_swap_checker.dir/operations_for_bothstacks.c.o"
+  "CMakeFiles/push_swap_checker.dir/operations_for_singlestack.c.o"
+  "CMakeFiles/push_swap_checker.dir/useful_functions_forstack.c.o"
+  "CMakeFiles/push_swap_checker.dir/list_functions.c.o"
+  "push_swap_checker.pdb"
+  "push_swap_checker"
 )
 
 # Per-language clean rules from dependency scanning.

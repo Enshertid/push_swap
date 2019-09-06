@@ -48,10 +48,10 @@ RM = /Users/ymanilow/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ymanilow/curcus42/push_swap_checker
+CMAKE_SOURCE_DIR = /Users/ymanilow/curcus42/push_swap/push_swap_checker
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ymanilow/curcus42/push_swap_checker/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/ymanilow/curcus42/push_swap/push_swap_checker/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ymanilow/curcus42/push_swap_checker/cmake-build-debug/CMakeFiles /Users/ymanilow/curcus42/push_swap_checker/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ymanilow/curcus42/push_swap/push_swap_checker/cmake-build-debug/CMakeFiles /Users/ymanilow/curcus42/push_swap/push_swap_checker/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ymanilow/curcus42/push_swap_checker/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ymanilow/curcus42/push_swap/push_swap_checker/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,32 +123,140 @@ push_swap_checker/fast:
 	$(MAKE) -f CMakeFiles/push_swap_checker.dir/build.make CMakeFiles/push_swap_checker.dir/build
 .PHONY : push_swap_checker/fast
 
-library.o: library.c.o
+checker.o: checker.c.o
 
-.PHONY : library.o
+.PHONY : checker.o
 
 # target to build an object file
-library.c.o:
-	$(MAKE) -f CMakeFiles/push_swap_checker.dir/build.make CMakeFiles/push_swap_checker.dir/library.c.o
-.PHONY : library.c.o
+checker.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_checker.dir/build.make CMakeFiles/push_swap_checker.dir/checker.c.o
+.PHONY : checker.c.o
 
-library.i: library.c.i
+checker.i: checker.c.i
 
-.PHONY : library.i
+.PHONY : checker.i
 
 # target to preprocess a source file
-library.c.i:
-	$(MAKE) -f CMakeFiles/push_swap_checker.dir/build.make CMakeFiles/push_swap_checker.dir/library.c.i
-.PHONY : library.c.i
+checker.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_checker.dir/build.make CMakeFiles/push_swap_checker.dir/checker.c.i
+.PHONY : checker.c.i
 
-library.s: library.c.s
+checker.s: checker.c.s
 
-.PHONY : library.s
+.PHONY : checker.s
 
 # target to generate assembly for a file
-library.c.s:
-	$(MAKE) -f CMakeFiles/push_swap_checker.dir/build.make CMakeFiles/push_swap_checker.dir/library.c.s
-.PHONY : library.c.s
+checker.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_checker.dir/build.make CMakeFiles/push_swap_checker.dir/checker.c.s
+.PHONY : checker.c.s
+
+list_functions.o: list_functions.c.o
+
+.PHONY : list_functions.o
+
+# target to build an object file
+list_functions.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_checker.dir/build.make CMakeFiles/push_swap_checker.dir/list_functions.c.o
+.PHONY : list_functions.c.o
+
+list_functions.i: list_functions.c.i
+
+.PHONY : list_functions.i
+
+# target to preprocess a source file
+list_functions.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_checker.dir/build.make CMakeFiles/push_swap_checker.dir/list_functions.c.i
+.PHONY : list_functions.c.i
+
+list_functions.s: list_functions.c.s
+
+.PHONY : list_functions.s
+
+# target to generate assembly for a file
+list_functions.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_checker.dir/build.make CMakeFiles/push_swap_checker.dir/list_functions.c.s
+.PHONY : list_functions.c.s
+
+operations_for_bothstacks.o: operations_for_bothstacks.c.o
+
+.PHONY : operations_for_bothstacks.o
+
+# target to build an object file
+operations_for_bothstacks.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_checker.dir/build.make CMakeFiles/push_swap_checker.dir/operations_for_bothstacks.c.o
+.PHONY : operations_for_bothstacks.c.o
+
+operations_for_bothstacks.i: operations_for_bothstacks.c.i
+
+.PHONY : operations_for_bothstacks.i
+
+# target to preprocess a source file
+operations_for_bothstacks.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_checker.dir/build.make CMakeFiles/push_swap_checker.dir/operations_for_bothstacks.c.i
+.PHONY : operations_for_bothstacks.c.i
+
+operations_for_bothstacks.s: operations_for_bothstacks.c.s
+
+.PHONY : operations_for_bothstacks.s
+
+# target to generate assembly for a file
+operations_for_bothstacks.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_checker.dir/build.make CMakeFiles/push_swap_checker.dir/operations_for_bothstacks.c.s
+.PHONY : operations_for_bothstacks.c.s
+
+operations_for_singlestack.o: operations_for_singlestack.c.o
+
+.PHONY : operations_for_singlestack.o
+
+# target to build an object file
+operations_for_singlestack.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_checker.dir/build.make CMakeFiles/push_swap_checker.dir/operations_for_singlestack.c.o
+.PHONY : operations_for_singlestack.c.o
+
+operations_for_singlestack.i: operations_for_singlestack.c.i
+
+.PHONY : operations_for_singlestack.i
+
+# target to preprocess a source file
+operations_for_singlestack.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_checker.dir/build.make CMakeFiles/push_swap_checker.dir/operations_for_singlestack.c.i
+.PHONY : operations_for_singlestack.c.i
+
+operations_for_singlestack.s: operations_for_singlestack.c.s
+
+.PHONY : operations_for_singlestack.s
+
+# target to generate assembly for a file
+operations_for_singlestack.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_checker.dir/build.make CMakeFiles/push_swap_checker.dir/operations_for_singlestack.c.s
+.PHONY : operations_for_singlestack.c.s
+
+useful_functions_forstack.o: useful_functions_forstack.c.o
+
+.PHONY : useful_functions_forstack.o
+
+# target to build an object file
+useful_functions_forstack.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_checker.dir/build.make CMakeFiles/push_swap_checker.dir/useful_functions_forstack.c.o
+.PHONY : useful_functions_forstack.c.o
+
+useful_functions_forstack.i: useful_functions_forstack.c.i
+
+.PHONY : useful_functions_forstack.i
+
+# target to preprocess a source file
+useful_functions_forstack.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_checker.dir/build.make CMakeFiles/push_swap_checker.dir/useful_functions_forstack.c.i
+.PHONY : useful_functions_forstack.c.i
+
+useful_functions_forstack.s: useful_functions_forstack.c.s
+
+.PHONY : useful_functions_forstack.s
+
+# target to generate assembly for a file
+useful_functions_forstack.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_checker.dir/build.make CMakeFiles/push_swap_checker.dir/useful_functions_forstack.c.s
+.PHONY : useful_functions_forstack.c.s
 
 # Help Target
 help:
@@ -159,9 +267,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... push_swap_checker"
-	@echo "... library.o"
-	@echo "... library.i"
-	@echo "... library.s"
+	@echo "... checker.o"
+	@echo "... checker.i"
+	@echo "... checker.s"
+	@echo "... list_functions.o"
+	@echo "... list_functions.i"
+	@echo "... list_functions.s"
+	@echo "... operations_for_bothstacks.o"
+	@echo "... operations_for_bothstacks.i"
+	@echo "... operations_for_bothstacks.s"
+	@echo "... operations_for_singlestack.o"
+	@echo "... operations_for_singlestack.i"
+	@echo "... operations_for_singlestack.s"
+	@echo "... useful_functions_forstack.o"
+	@echo "... useful_functions_forstack.i"
+	@echo "... useful_functions_forstack.s"
 .PHONY : help
 
 

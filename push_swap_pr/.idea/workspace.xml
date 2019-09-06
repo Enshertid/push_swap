@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="push_swap" targetName="push_swap" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="76046281-fa99-4624-83fc-e659be788322" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeFiles/push_swap_checker.dir/checker.c.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeFiles/push_swap_checker.dir/list_functions.c.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeFiles/push_swap_checker.dir/operations_for_bothstacks.c.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeFiles/push_swap_checker.dir/operations_for_singlestack.c.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeFiles/push_swap_checker.dir/useful_functions_forstack.c.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/push_swap_checker" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/.idea/push_swap.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/cmake-build-debug/CMakeFiles/3.14.5/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/cmake-build-debug/CMakeFiles/3.14.5/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/cmake-build-debug/CMakeFiles/3.14.5/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/cmake-build-debug/CMakeFiles/3.14.5/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/cmake-build-debug/CMakeFiles/3.14.5/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/cmake-build-debug/CMakeFiles/3.14.5/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/cmake-build-debug/CMakeFiles/3.14.5/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/cmake-build-debug/CMakeFiles/3.14.5/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/cmake-build-debug/CMakeFiles/3.14.5/CompilerIdCXX/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/cmake-build-debug/CMakeFiles/feature_tests.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/cmake-build-debug/CMakeFiles/feature_tests.cxx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/C.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/checker.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/list_functions.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/operations_for_bothstacks.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/operations_for_singlestack.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/push_swap.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/useful_functions_forstack.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/cmake-build-debug/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/cmake-build-debug/push_swap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/cmake-build-debug/push_swap.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/error.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_abs.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_arrdel.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_atoi.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_dlstadd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_dlstappend.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_dlstiter.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_dlstnew.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_dlstpurge.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_dlstsize.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_dpow.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_gnl.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_ipow.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_isalnum.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_isalpha.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_isascii.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_isdigit.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_isprint.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_isspace.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_itoa.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_lstadd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_lstappend.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_lstdelete.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_lstdelone.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_lstextend.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_lstiter.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_lstmap.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_lstnew.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_lstpop.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_lstpopback.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_lstpurge.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_lstsize.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_max.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_maxn.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_memalloc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_memccpy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_memchr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_memcmp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_memcpy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_memmove.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_memnchr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_memset.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_min.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_minn.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_mitoa.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_print_bits.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_putchar.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_putchar_fd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_putendl.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_putendl_fd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_putnbr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_putnbr_fd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_putstr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_putstr_fd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_sizeof_num.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_strcat.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_strchr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_strclr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_strcmp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_strcpy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_strdel.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_strdup.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_strequ.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_striter.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_striteri.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_strjoin.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_strlcat.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_strlen.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_strmap.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_strmapi.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_strncat.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_strncmp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_strncpy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_strnequ.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_strnew.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_strnstr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_strrchr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_strrev.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_strsplit.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_strstr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_strsub.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_strtrim.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_swap.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_tolower.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/ft_toupper.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/libft/includes/libft.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/list_functions.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/operations_for_bothstacks.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/operations_for_singlestack.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/push_swap.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/push_swap.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap/useful_functions_forstack.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap_checker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../push_swap_checker/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap_checker/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../push_swap_checker/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap_checker/checker.c" beforeDir="false" afterPath="$PROJECT_DIR$/../push_swap_checker/checker.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeFiles/push_swap_checker.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeFiles/push_swap_checker.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeFiles/push_swap_checker.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeFiles/push_swap_checker.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeFiles/push_swap_checker.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeFiles/push_swap_checker.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeFiles/push_swap_checker.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeFiles/push_swap_checker.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeFiles/push_swap_checker.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeFiles/push_swap_checker.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeFiles/push_swap_checker.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeFiles/push_swap_checker.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeFiles/push_swap_checker.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeFiles/push_swap_checker.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/push_swap_checker.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/push_swap_checker.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap_checker/list_functions.c" beforeDir="false" afterPath="$PROJECT_DIR$/../push_swap_checker/list_functions.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap_checker/operations_for_bothstacks.c" beforeDir="false" afterPath="$PROJECT_DIR$/../push_swap_checker/operations_for_bothstacks.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap_checker/operations_for_singlestack.c" beforeDir="false" afterPath="$PROJECT_DIR$/../push_swap_checker/operations_for_singlestack.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap_checker/push_swap.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap_checker/useful_functions_forstack.c" beforeDir="false" afterPath="$PROJECT_DIR$/../push_swap_checker/useful_functions_forstack.c" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectId" id="1QJfC60nP6IohDqmNyEGCrwpvQB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="push_swap" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="push_swap" TARGET_NAME="push_swap" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="push_swap" RUN_TARGET_NAME="push_swap">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="76046281-fa99-4624-83fc-e659be788322" name="Default Changelist" comment="" />
+      <created>1567493488377</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1567493488377</updated>
+      <workItem from="1567493490148" duration="6000" />
+      <workItem from="1567493519925" duration="14000" />
+      <workItem from="1567493541106" duration="3000" />
+      <workItem from="1567493557497" duration="8106000" />
+      <workItem from="1567507780157" duration="1078000" />
+      <workItem from="1567579233868" duration="3599000" />
+      <workItem from="1567586203522" duration="26000" />
+      <workItem from="1567586243467" duration="27000" />
+      <workItem from="1567586281846" duration="9140000" />
+      <workItem from="1567665112772" duration="3603000" />
+      <workItem from="1567675999928" duration="1364000" />
+      <workItem from="1567678786580" duration="75000" />
+      <workItem from="1567679046739" duration="2646000" />
+      <workItem from="1567692471494" duration="1929000" />
+      <workItem from="1567695142442" duration="819000" />
+      <workItem from="1567700184572" duration="90000" />
+      <workItem from="1567752277998" duration="4153000" />
+      <workItem from="1567766771898" duration="397000" />
+      <workItem from="1567768461045" duration="3000" />
+      <workItem from="1567768515424" duration="1000" />
+      <workItem from="1567768527852" duration="2000" />
+      <workItem from="1567768553357" duration="642000" />
+      <workItem from="1567770186145" duration="412000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="stack-&gt;num" language="ObjectiveC" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
