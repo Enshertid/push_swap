@@ -97,6 +97,9 @@
 		<Unit filename="/Users/ymanilow/curcus42/push_swap/push_swap_checker/operations_for_singlestack.c">
 			<Option target="push_swap_checker"/>
 		</Unit>
+		<Unit filename="/Users/ymanilow/curcus42/push_swap/push_swap_checker/parsing.c">
+			<Option target="push_swap_checker"/>
+		</Unit>
 		<Unit filename="/Users/ymanilow/curcus42/push_swap/push_swap_checker/useful_functions_forstack.c">
 			<Option target="push_swap_checker"/>
 		</Unit>

@@ -6,18 +6,23 @@
 /*   By: ymanilow <ymanilow@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 17:55:37 by ymanilow          #+#    #+#             */
-/*   Updated: 2019/09/05 17:55:37 by ymanilow         ###   ########.fr       */
+/*   Updated: 2019/09/07 17:10:43 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "checker.h"
 
-void			ft_stack_list_add(t_stack **stack, t_stack *new)
+void			ft_stack_list_add(t_stack **head, t_stack *new)
 {
-	if (stack && new)
+	t_stack		*tmp;
+
+	if (head && new)
 	{
-		new->next = *stack;
-		*stack = new;
+		tmp = *head;
+		while (tmp->next)
+			tmp = tmp->next;
+		new->next = NULL;
+		tmp->next = new;
 	}
 }
 

@@ -231,6 +231,33 @@ operations_for_singlestack.c.s:
 	$(MAKE) -f CMakeFiles/push_swap_checker.dir/build.make CMakeFiles/push_swap_checker.dir/operations_for_singlestack.c.s
 .PHONY : operations_for_singlestack.c.s
 
+parsing.o: parsing.c.o
+
+.PHONY : parsing.o
+
+# target to build an object file
+parsing.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_checker.dir/build.make CMakeFiles/push_swap_checker.dir/parsing.c.o
+.PHONY : parsing.c.o
+
+parsing.i: parsing.c.i
+
+.PHONY : parsing.i
+
+# target to preprocess a source file
+parsing.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_checker.dir/build.make CMakeFiles/push_swap_checker.dir/parsing.c.i
+.PHONY : parsing.c.i
+
+parsing.s: parsing.c.s
+
+.PHONY : parsing.s
+
+# target to generate assembly for a file
+parsing.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_checker.dir/build.make CMakeFiles/push_swap_checker.dir/parsing.c.s
+.PHONY : parsing.c.s
+
 useful_functions_forstack.o: useful_functions_forstack.c.o
 
 .PHONY : useful_functions_forstack.o
@@ -279,6 +306,9 @@ help:
 	@echo "... operations_for_singlestack.o"
 	@echo "... operations_for_singlestack.i"
 	@echo "... operations_for_singlestack.s"
+	@echo "... parsing.o"
+	@echo "... parsing.i"
+	@echo "... parsing.s"
 	@echo "... useful_functions_forstack.o"
 	@echo "... useful_functions_forstack.i"
 	@echo "... useful_functions_forstack.s"

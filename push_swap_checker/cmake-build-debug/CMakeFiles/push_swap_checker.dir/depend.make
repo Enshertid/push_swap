@@ -17,6 +17,10 @@ CMakeFiles/push_swap_checker.dir/operations_for_singlestack.c.o: ../checker.h
 CMakeFiles/push_swap_checker.dir/operations_for_singlestack.c.o: ../libft/includes/libft.h
 CMakeFiles/push_swap_checker.dir/operations_for_singlestack.c.o: ../operations_for_singlestack.c
 
+CMakeFiles/push_swap_checker.dir/parsing.c.o: ../checker.h
+CMakeFiles/push_swap_checker.dir/parsing.c.o: ../libft/includes/libft.h
+CMakeFiles/push_swap_checker.dir/parsing.c.o: ../parsing.c
+
 CMakeFiles/push_swap_checker.dir/useful_functions_forstack.c.o: ../checker.h
 CMakeFiles/push_swap_checker.dir/useful_functions_forstack.c.o: ../libft/includes/libft.h
 CMakeFiles/push_swap_checker.dir/useful_functions_forstack.c.o: ../useful_functions_forstack.c

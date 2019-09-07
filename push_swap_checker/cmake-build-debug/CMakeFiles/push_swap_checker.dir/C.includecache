@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/ymanilow/curcus42/push_swap/push_swap_checker/checker.c
-checker.h
-/Users/ymanilow/curcus42/push_swap/push_swap_checker/checker.h
-
 /Users/ymanilow/curcus42/push_swap/push_swap_checker/checker.h
 libft/includes/libft.h
 /Users/ymanilow/curcus42/push_swap/push_swap_checker/libft/includes/libft.h
@@ -31,18 +27,6 @@ sys/stat.h
 -
 fcntl.h
 -
-
-/Users/ymanilow/curcus42/push_swap/push_swap_checker/list_functions.c
-checker.h
-/Users/ymanilow/curcus42/push_swap/push_swap_checker/checker.h
-
-/Users/ymanilow/curcus42/push_swap/push_swap_checker/operations_for_bothstacks.c
-checker.h
-/Users/ymanilow/curcus42/push_swap/push_swap_checker/checker.h
-
-/Users/ymanilow/curcus42/push_swap/push_swap_checker/operations_for_singlestack.c
-checker.h
-/Users/ymanilow/curcus42/push_swap/push_swap_checker/checker.h
 
 /Users/ymanilow/curcus42/push_swap/push_swap_checker/useful_functions_forstack.c
 checker.h

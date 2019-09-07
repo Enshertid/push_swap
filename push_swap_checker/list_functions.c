@@ -6,20 +6,17 @@
 /*   By: ymanilow <ymanilow@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/06 09:57:59 by ymanilow          #+#    #+#             */
-/*   Updated: 2019/09/06 09:57:59 by ymanilow         ###   ########.fr       */
+/*   Updated: 2019/09/07 16:13:49 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "checker.h"
 
 
-t_stacks		*ft_struct_create()
+void		ft_struct_zero(t_stacks *point)
 {
-	t_stacks *point;
-
-	if (!(point = malloc(sizeof(t_stacks))))
-		return (NULL);
-	return (point);
+	point->stack_a = NULL;
+	point->stack_b = NULL;
 }
 
 t_stack			*ft_listofstack_create(int a)
@@ -36,14 +33,14 @@ t_stack			*ft_listofstack_create(int a)
 void			ft_list_delete(t_stacks *point)
 {
 	t_stack *tmp;
+	t_stack *lst;
 
-	while (point->head)
+	lst = point->stack_a;
+	while (lst)
 	{
-		tmp = point->head;
-		point->head = point->head->next;
+		tmp = lst;
+		lst = lst->next;
 		free(tmp);
 	}
-	free(point->head);
-	free(point);
 }
 
