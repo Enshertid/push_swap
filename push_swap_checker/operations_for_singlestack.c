@@ -1,10 +1,18 @@
-//
-// Created by Yaxley Manilow on 04/09/2019.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   operations_for_singlestack.c                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ymanilow <ymanilow@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/09/09 13:51:11 by ymanilow          #+#    #+#             */
+/*   Updated: 2019/09/09 13:52:45 by ymanilow         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "checker.h"
 
-void		ft_swap_stack(t_stack **stack)
+void		ft_swap_stack(t_stack **stack, t_stacks *point)
 {
 	t_stack *tmp;
 
@@ -14,10 +22,11 @@ void		ft_swap_stack(t_stack **stack)
 		(*stack)->next = tmp->next;
 		tmp->next = *stack;
 		*stack = tmp;
+		point->commands = point->commands->next;
 	}
 }
 
-void			ft_push_stack(t_stack **src, t_stack **dst)
+void			ft_push_stack(t_stack **src, t_stack **dst, t_stacks *point)
 {
 	t_stack *tmp;
 	t_stack *tmp1;
@@ -43,9 +52,10 @@ void			ft_push_stack(t_stack **src, t_stack **dst)
 		(*src)->next = tmp->next;
 		(*dst)->next = NULL;
 	}
+	point->commands = point->commands->next;
 }
 
-void			ft_rotate_stack(t_stack **head)
+void			ft_rotate_stack(t_stack **head, t_stacks *point)
 {
 	t_stack		*tmp;
 	t_stack		*tmp1;
@@ -59,10 +69,11 @@ void			ft_rotate_stack(t_stack **head)
 		(*head)->next = NULL;
 		tmp->next = *head;
 		*head = tmp1;
+		point->commands = point->commands->next;
 	}
 }
 
-void			ft_reverse_rotate(t_stack **head)
+void			ft_reverse_rotate(t_stack **head, t_stacks *point)
 {
 	t_stack *tmp;
 	t_stack *tmp1;
@@ -78,5 +89,6 @@ void			ft_reverse_rotate(t_stack **head)
 		tmp1->next = NULL;
 		tmp->next = *head;
 		*head = tmp;
+		point->commands = point->commands->next;
 	}
 }

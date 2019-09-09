@@ -6,7 +6,7 @@
 /*   By: ymanilow <ymanilow@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/06 17:13:37 by ymanilow          #+#    #+#             */
-/*   Updated: 2019/09/07 17:52:58 by ymanilow         ###   ########.fr       */
+/*   Updated: 2019/09/09 16:26:50 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,28 +20,59 @@ int			ft_check_av(char *str)
 			str++;
 		else if (ft_isspace(*str))
 			str++;
+		else if (*str == '-' && ft_isdigit(*(str + 1)))
+			str++;
 		else
 			return (0);
 	}
 	return (1);
 }
 
-void		ft_getting_numbers(t_stacks *point, char *str)
+long int	ft_atoi1(const char *str)
 {
-	int num;
+	long long int	res;
+	short int		sign;
+
+	while (ft_isspace(*str))
+		++str;
+	sign = 1;
+	if (*str == '-')
+	{
+		sign = -1;
+		++str;
+	}
+	else if (*str == '+')
+		++str;
+	res = 0;
+	while (ft_isdigit(*str))
+		res = res * 10 + *str++ - '0';
+	return (res * sign);
+}
+
+int			ft_getting_numbers(t_stacks *point, char *str)
+{
+	long long int num;
+	int num1;
 
 	while (*str)
 	{
-		while (!ft_isdigit(*str))
+		while (!ft_isdigit(*str) && *str != '-')
 			str++;
-		num = ft_atoi(str);
+		num = ft_atoi1(str);
+		num1 = num;
+		if (num != (long long int)num1)
+		{
+			printf("Error\n");
+			return (0);
+		}
 		if ((point)->stack_a)
-			ft_stack_list_add(&(point)->stack_a, ft_list_create(num, 1));
+			ft_stack_list_add(&(point)->stack_a, ft_list_create(num, 1, NULL));
 		else
-			(point)->stack_a = ft_list_create(num, 1);
-		while (ft_isdigit(*str))
+			(point)->stack_a = ft_list_create(num, 1, NULL);
+		while (ft_isdigit(*str) || *str == '-')
 			str++;
 	}
+	return (1);
 }
 
 void		ft_sortof_array(int *array, int ln)
@@ -85,7 +116,7 @@ int		ft_check_repeats(t_stacks point)
 	}
 	ft_sortof_array(array, ln);
 	i = 0;
-	while (i < ln)
+	while (i < ln - 1)
 	{
 		if (array[i] == array[i + 1])
 		{
@@ -112,9 +143,10 @@ int			ft_parsing(t_stacks *point, char **str, int ac)
 			printf("Error\n");
 			return (0);
 		}
-		ft_getting_numbers(point, str[i++]);
+		if (!ft_getting_numbers(point, str[i++]))
+			return (0);
 	}
-	if(!ft_check_repeats(*point))
+	if (!ft_check_repeats(*point))
 	{
 		printf("Error\n");
 		return(0);

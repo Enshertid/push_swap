@@ -6,7 +6,7 @@
 /*   By: ymanilow <ymanilow@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/06 09:57:59 by ymanilow          #+#    #+#             */
-/*   Updated: 2019/09/09 11:39:41 by ymanilow         ###   ########.fr       */
+/*   Updated: 2019/09/09 14:30:30 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,10 @@ void		ft_struct_zero(t_stacks *point)
 	point->stack_a = NULL;
 	point->stack_b = NULL;
 	point->commands = NULL;
+	point->head = NULL;
 }
 
-void			*ft_list_create(int a, int type)
+void			*ft_list_create(int a, int type, char *ln)
 {
 	t_stack		*stack;
 	t_command	*new;
@@ -38,6 +39,7 @@ void			*ft_list_create(int a, int type)
 	{
 		if (!(new = malloc(sizeof(t_command))))
 			return (NULL);
+		ft_command_add(ln, new);
 		new->next = NULL;
 		return(new);
 	}
@@ -54,10 +56,16 @@ void			ft_list_delete(t_stacks *point)
 		point->stack_a = point->stack_a->next;
 		free(tmp);
 	}
-	while (point->commands)
+	while (point->stack_b)
 	{
-		tmp1 = point->commands;
-		point->commands = point->commands->next;
+		tmp = point->stack_b;
+		point->stack_b = point->stack_b->next;
+		free(tmp);
+	}
+	while (point->head)
+	{
+		tmp1 = point->head;
+		point->head = point->head->next;
 		free(tmp1);
 	}
 }
