@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/Users/ymanilow/curcus42/push_swap/push_swap_checker/check_commands.c" "/Users/ymanilow/curcus42/push_swap/push_swap_checker/cmake-build-debug/CMakeFiles/push_swap_checker.dir/check_commands.c.o"
   "/Users/ymanilow/curcus42/push_swap/push_swap_checker/checker.c" "/Users/ymanilow/curcus42/push_swap/push_swap_checker/cmake-build-debug/CMakeFiles/push_swap_checker.dir/checker.c.o"
   "/Users/ymanilow/curcus42/push_swap/push_swap_checker/list_functions.c" "/Users/ymanilow/curcus42/push_swap/push_swap_checker/cmake-build-debug/CMakeFiles/push_swap_checker.dir/list_functions.c.o"
   "/Users/ymanilow/curcus42/push_swap/push_swap_checker/operations_for_bothstacks.c" "/Users/ymanilow/curcus42/push_swap/push_swap_checker/cmake-build-debug/CMakeFiles/push_swap_checker.dir/operations_for_bothstacks.c.o"

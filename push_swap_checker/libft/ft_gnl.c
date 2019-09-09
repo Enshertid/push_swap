@@ -47,7 +47,7 @@ char		*ft_read_out(char *s, int fd)
 	return (s);
 }
 
-int			get_next_line(int fd, char **line)
+int			ft_get_next_line(int fd, char **line)
 {
 	static char			*s[10000];
 	char				*s1;

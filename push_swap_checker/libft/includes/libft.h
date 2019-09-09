@@ -6,7 +6,7 @@
 /*   By: user <user@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/08 20:28:39 by dbendu            #+#    #+#             */
-/*   Updated: 2019/09/02 21:32:42 by user             ###   ########.fr       */
+/*   Updated: 2019/09/07 17:50:44 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@
 #define ull unsigned long long
 #define ul unsigned long
 
-# define GNL_BUFF_SIZE 10
+# define GNL_BUFF_SIZE 100
 
 # define TOSTR(a)	#a
 
@@ -49,7 +49,7 @@ typedef struct		s_dlist
 	struct s_dlist	*end;
 }					t_dlist;
 
-int				get_next_line(int fd, char **line);
+int					ft_get_next_line(int fd, char **line);
 void				ft_lstpop(t_list **list);
 void				ft_lstpurge(t_list **list);
 void				ft_lstdelone(t_list **list);

@@ -6,7 +6,7 @@
 /*   By: ymanilow <ymanilow@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 17:55:37 by ymanilow          #+#    #+#             */
-/*   Updated: 2019/09/07 17:10:43 by ymanilow         ###   ########.fr       */
+/*   Updated: 2019/09/09 11:39:41 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,20 @@
 void			ft_stack_list_add(t_stack **head, t_stack *new)
 {
 	t_stack		*tmp;
+
+	if (head && new)
+	{
+		tmp = *head;
+		while (tmp->next)
+			tmp = tmp->next;
+		new->next = NULL;
+		tmp->next = new;
+	}
+}
+
+void		ft_list_of_command_add(t_command **head, t_command *new)
+{
+	t_command *tmp;
 
 	if (head && new)
 	{

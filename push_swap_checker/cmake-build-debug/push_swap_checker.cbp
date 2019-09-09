@@ -82,6 +82,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/ymanilow/curcus42/push_swap/push_swap_checker/check_commands.c">
+			<Option target="push_swap_checker"/>
+		</Unit>
 		<Unit filename="/Users/ymanilow/curcus42/push_swap/push_swap_checker/checker.c">
 			<Option target="push_swap_checker"/>
 		</Unit>

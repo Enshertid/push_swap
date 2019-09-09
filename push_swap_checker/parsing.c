@@ -6,7 +6,7 @@
 /*   By: ymanilow <ymanilow@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/06 17:13:37 by ymanilow          #+#    #+#             */
-/*   Updated: 2019/09/07 16:46:53 by ymanilow         ###   ########.fr       */
+/*   Updated: 2019/09/07 17:52:58 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,9 @@ void		ft_getting_numbers(t_stacks *point, char *str)
 			str++;
 		num = ft_atoi(str);
 		if ((point)->stack_a)
-			ft_stack_list_add(&(point)->stack_a, ft_listofstack_create(num));
+			ft_stack_list_add(&(point)->stack_a, ft_list_create(num, 1));
 		else
-			(point)->stack_a = ft_listofstack_create(num);
+			(point)->stack_a = ft_list_create(num, 1);
 		while (ft_isdigit(*str))
 			str++;
 	}
@@ -87,11 +87,12 @@ int		ft_check_repeats(t_stacks point)
 	i = 0;
 	while (i < ln)
 	{
-		if (array[i++] == array[i])
+		if (array[i] == array[i + 1])
 		{
 			free(array);
 			return (0);
 		}
+		i++;
 	}
 	free(array);
 	return (1);

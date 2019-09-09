@@ -17,6 +17,7 @@ SRCS_C = ./parsing.c\
 		 ./list_functions.c\
 		 ./useful_functions_forstack.c\
 		 ./operations_for_bothstacks.c\
+		 ./check_commands.c\
 		 ./operations_for_singlestack.c
 
 SRCS_CO = $(SRCS_C:.c=.o)\

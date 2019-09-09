@@ -123,6 +123,33 @@ push_swap_checker/fast:
 	$(MAKE) -f CMakeFiles/push_swap_checker.dir/build.make CMakeFiles/push_swap_checker.dir/build
 .PHONY : push_swap_checker/fast
 
+check_commands.o: check_commands.c.o
+
+.PHONY : check_commands.o
+
+# target to build an object file
+check_commands.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_checker.dir/build.make CMakeFiles/push_swap_checker.dir/check_commands.c.o
+.PHONY : check_commands.c.o
+
+check_commands.i: check_commands.c.i
+
+.PHONY : check_commands.i
+
+# target to preprocess a source file
+check_commands.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_checker.dir/build.make CMakeFiles/push_swap_checker.dir/check_commands.c.i
+.PHONY : check_commands.c.i
+
+check_commands.s: check_commands.c.s
+
+.PHONY : check_commands.s
+
+# target to generate assembly for a file
+check_commands.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_checker.dir/build.make CMakeFiles/push_swap_checker.dir/check_commands.c.s
+.PHONY : check_commands.c.s
+
 checker.o: checker.c.o
 
 .PHONY : checker.o
@@ -294,6 +321,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... push_swap_checker"
+	@echo "... check_commands.o"
+	@echo "... check_commands.i"
+	@echo "... check_commands.s"
 	@echo "... checker.o"
 	@echo "... checker.i"
 	@echo "... checker.s"
