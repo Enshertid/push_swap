@@ -13,62 +13,62 @@
 #include "checker.h"
 
 
-int				ft_check_lenght_of_command(t_command *head)
-{
-	int		i;
-
-	i = 0;
-	if (head)
-	{
-		while (head->next)
-		{
-			head = head->next;
-			i++;
-		}
-		if (head)
-			i++;
-	}
-	return (i);
-}
-
-void			ft_print_command(t_command *head, int ln)
-{
-	int i;
-
-	i = 0;
-	if (head)
-	{
-		while (i < ln)
-		{
-			if (head->command == push_a)
-				printf("push_a\n");
-			else if (head->command == push_b)
-				printf("push_b\n");
-			else if (head->command == swap_a)
-				printf("swap_a\n");
-			else if (head->command == swap_b)
-				printf("swap_b\n");
-			else if (head->command == swap_both)
-				printf("swap_both\n");
-			else if (head->command == rotate_a)
-				printf("rotate_a\n");
-			else if (head->command == rotate_b)
-				printf("rotate_b\n");
-			else if (head->command == rotate_both)
-				printf("rotate_both\n");
-			else if (head->command == reverse_a)
-				printf("reverse_a\n");
-			else if (head->command == reverse_b)
-				printf("reverse_b\n");
-			else if (head->command == reverse_both)
-				printf("reverse_both\n");
-			if (head->next)
-				head = head->next;
-			i++;
-		}
-		printf("end of stack\n");
-	}
-}
+//int				ft_check_lenght_of_command(t_command *head)
+//{
+//	int		i;
+//
+//	i = 0;
+//	if (head)
+//	{
+//		while (head->next)
+//		{
+//			head = head->next;
+//			i++;
+//		}
+//		if (head)
+//			i++;
+//	}
+//	return (i);
+//}
+//
+//void			ft_print_command(t_command *head, int ln)
+//{
+//	int i;
+//
+//	i = 0;
+//	if (head)
+//	{
+//		while (i < ln)
+//		{
+//			if (head->command == push_a)
+//				printf("push_a\n");
+//			else if (head->command == push_b)
+//				printf("push_b\n");
+//			else if (head->command == swap_a)
+//				printf("swap_a\n");
+//			else if (head->command == swap_b)
+//				printf("swap_b\n");
+//			else if (head->command == swap_both)
+//				printf("swap_both\n");
+//			else if (head->command == rotate_a)
+//				printf("rotate_a\n");
+//			else if (head->command == rotate_b)
+//				printf("rotate_b\n");
+//			else if (head->command == rotate_both)
+//				printf("rotate_both\n");
+//			else if (head->command == reverse_a)
+//				printf("reverse_a\n");
+//			else if (head->command == reverse_b)
+//				printf("reverse_b\n");
+//			else if (head->command == reverse_both)
+//				printf("reverse_both\n");
+//			if (head->next)
+//				head = head->next;
+//			i++;
+//		}
+//		printf("end of stack\n");
+//	}
+//}
 
 int			ft_check_sorted_list(t_stacks point)
 {
@@ -117,10 +117,7 @@ int			main(int ac, char **av)
 		ft_list_delete(&point);
 		return (0);
 	}
-	point.head = point.commands;
 	ft_using_commands(&point);
-	ft_print_command(point.head, ft_check_lenght_of_command(point.head));
-	ft_print_stack(point.stack_a, ft_check_lenght_of_stack(point.stack_a));
 	if (!ft_check_sorted_list(point))
 	{
 		ft_list_delete(&point);

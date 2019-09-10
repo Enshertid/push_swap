@@ -6,7 +6,7 @@
 #    By: ymanilow <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/04 11:41:35 by ymanilow          #+#    #+#              #
-#    Updated: 2019/09/10 12:17:29 by ymanilow         ###   ########.fr        #
+#    Updated: 2019/09/10 12:20:33 by ymanilow         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,7 +38,10 @@ fclean: clean
 	@rm -Rf ./push_swap
 a: fclean all
 	clear
-	./push_swap
+	./push_swap 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+	./push_swap -50 -45 -2-4      55 67 9
+	./push_swap hello error
+	./push_swap     
 
 c: clean
 	clear

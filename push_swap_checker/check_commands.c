@@ -57,5 +57,6 @@ int			ft_check_commands(t_stacks *point)
 			ft_list_of_command_add(&point->commands, ft_list_create(0, 0, ln));
 		free(ln);
 	}
+	point->head = point->commands;
 	return (1);
 }
