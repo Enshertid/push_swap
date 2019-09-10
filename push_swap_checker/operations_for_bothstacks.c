@@ -6,7 +6,7 @@
 /*   By: ymanilow <ymanilow@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/06 09:55:23 by ymanilow          #+#    #+#             */
-/*   Updated: 2019/09/09 13:57:09 by ymanilow         ###   ########.fr       */
+/*   Updated: 2019/09/09 14:18:20 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,8 @@ void		ft_swap_both(t_stack **stack_a, t_stack **stack_b, t_stacks *point)
 		ft_swap_stack(stack_b, point);
 }
 
-void			ft_rotate_all(t_stack **stack_a, t_stack **stack_b, t_stacks *point)
+void			ft_rotate_all(t_stack **stack_a, t_stack **stack_b,
+													t_stacks *point)
 {
 	if (*stack_a && (*stack_a)->next)
 		ft_rotate_stack(stack_a, point);
@@ -28,7 +29,8 @@ void			ft_rotate_all(t_stack **stack_a, t_stack **stack_b, t_stacks *point)
 		ft_rotate_stack(stack_b, point);
 }
 
-void			ft_reverse_all(t_stack **stack_a, t_stack **stack_b, t_stacks *point)
+void			ft_reverse_all(t_stack **stack_a, t_stack **stack_b,
+													t_stacks *point)
 {
 	if (*stack_a && (*stack_a)->next)
 		ft_reverse_rotate(stack_a, point);

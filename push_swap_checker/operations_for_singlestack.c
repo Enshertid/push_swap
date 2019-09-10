@@ -6,7 +6,7 @@
 /*   By: ymanilow <ymanilow@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/09 13:51:11 by ymanilow          #+#    #+#             */
-/*   Updated: 2019/09/09 13:52:45 by ymanilow         ###   ########.fr       */
+/*   Updated: 2019/09/09 13:57:09 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ void			ft_push_stack(t_stack **src, t_stack **dst, t_stacks *point)
 			(*src) = NULL;
 		(*dst)->next = tmp1;
 	}
-	else if (*src)
+	else if (*src && (*src)->next)
 	{
 		tmp = (*src)->next;
 		*dst = *src;

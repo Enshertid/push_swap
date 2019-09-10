@@ -13,24 +13,19 @@
   <component name="ChangeListManager">
     <list default="true" id="39d658fd-275d-4dbb-8834-9c2ffc861d6a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/check_commands.c" beforeDir="false" afterPath="$PROJECT_DIR$/check_commands.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/checker.c" beforeDir="false" afterPath="$PROJECT_DIR$/checker.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/checker.h" beforeDir="false" afterPath="$PROJECT_DIR$/checker.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap_checker.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap_checker.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap_checker.dir/check_commands.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap_checker.dir/check_commands.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap_checker.dir/checker.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap_checker.dir/checker.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap_checker.dir/list_functions.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap_checker.dir/list_functions.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap_checker.dir/operations_for_bothstacks.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap_checker.dir/operations_for_bothstacks.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap_checker.dir/operations_for_singlestack.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap_checker.dir/operations_for_singlestack.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap_checker.dir/parsing.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/push_swap_checker.dir/parsing.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/push_swap_checker" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/push_swap_checker" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libft/ft_atoi.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_atoi.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libft/includes/libft.h" beforeDir="false" afterPath="$PROJECT_DIR$/libft/includes/libft.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/list_functions.c" beforeDir="false" afterPath="$PROJECT_DIR$/list_functions.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/operations_for_bothstacks.c" beforeDir="false" afterPath="$PROJECT_DIR$/operations_for_bothstacks.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/operations_for_singlestack.c" beforeDir="false" afterPath="$PROJECT_DIR$/operations_for_singlestack.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parsing.c" beforeDir="false" afterPath="$PROJECT_DIR$/parsing.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/useful_functions_forstack.c" beforeDir="false" afterPath="$PROJECT_DIR$/useful_functions_forstack.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +62,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="push_swap_checker" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="-2147483649 -1 0 2147483647" PASS_PARENT_ENVS_2="true" PROJECT_NAME="push_swap_checker" TARGET_NAME="push_swap_checker" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="push_swap_checker" RUN_TARGET_NAME="push_swap_checker">
+    <configuration name="push_swap_checker" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="-2147483650 0 1 2 3 4 " PASS_PARENT_ENVS_2="true" PROJECT_NAME="push_swap_checker" TARGET_NAME="push_swap_checker" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="push_swap_checker" RUN_TARGET_NAME="push_swap_checker">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -91,6 +86,7 @@
       <workItem from="1567840911412" duration="1302000" />
       <workItem from="1567855035633" duration="9052000" />
       <workItem from="1568013931222" duration="15291000" />
+      <workItem from="1568035709639" duration="2530000" />
     </task>
     <servers />
   </component>
@@ -111,20 +107,6 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/parsing.c</url>
-          <line>102</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/parsing.c</url>
-          <line>51</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
         <watch expression="ln" />

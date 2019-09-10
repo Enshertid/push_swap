@@ -6,7 +6,7 @@
 /*   By: ymanilow <ymanilow@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 17:55:24 by ymanilow          #+#    #+#             */
-/*   Updated: 2019/09/09 14:49:02 by ymanilow         ###   ########.fr       */
+/*   Updated: 2019/09/09 17:05:43 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -106,13 +106,21 @@ int			main(int ac, char **av)
 
 	ft_struct_zero(&point);
 	if (!ft_parsing(&point, av, ac))
+	{
+		printf("Error\n");
+		if (point.stack_a)
+			ft_list_delete(&point);
 		return (0);
-	ft_print_stack(point.stack_a, ft_check_lenght_of_stack(point.stack_a));
+	}
 	if (!ft_check_commands(&point))
+	{
+		ft_list_delete(&point);
 		return (0);
-	ft_print_command(point.commands, ft_check_lenght_of_command(point.commands));
+	}
 	point.head = point.commands;
 	ft_using_commands(&point);
+	ft_print_command(point.head, ft_check_lenght_of_command(point.head));
+	ft_print_stack(point.stack_a, ft_check_lenght_of_stack(point.stack_a));
 	if (!ft_check_sorted_list(point))
 	{
 		ft_list_delete(&point);

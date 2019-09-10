@@ -6,7 +6,7 @@
 /*   By: user <user@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/08 20:28:39 by dbendu            #+#    #+#             */
-/*   Updated: 2019/09/09 15:33:37 by ymanilow         ###   ########.fr       */
+/*   Updated: 2019/09/09 16:21:55 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,7 +99,7 @@ int					ft_isdigit(int c);
 int					ft_isprint(int c);
 int					ft_isspace(int c);
 void				ft_swap(void *a, void *b, size_t size);
-long long int			ft_atoi(const char *str);
+long int			ft_atoi(const char *str);
 size_t				sizeof_num(__int128_t num, unsigned base);
 
 char				*ft_strrev(char *str);
