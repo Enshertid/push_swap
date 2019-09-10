@@ -6,7 +6,7 @@
 #    By: ymanilow <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/04 11:41:35 by ymanilow          #+#    #+#              #
-#    Updated: 2019/09/06 17:41:47 by ymanilow         ###   ########.fr        #
+#    Updated: 2019/09/10 12:17:29 by ymanilow         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,3 +43,4 @@ a: fclean all
 c: clean
 	clear
 	@rm -Rf ./push_swap
+	@rm -Rf ./push_swap.dSYM/
