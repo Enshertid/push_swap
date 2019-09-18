@@ -12,12 +12,17 @@
 
 #include "push_swap.h"
 
-void			ft_stack_list_add(t_stack **stack, t_stack *new)
+void			ft_stack_list_add(t_stack **head, t_stack *new)
 {
-	if (stack && new)
+	t_stack *tmp;
+
+	if (head && new)
 	{
-		new->next = *stack;
-		*stack = new;
+		tmp = *head;
+		while (tmp->next)
+			tmp = tmp->next;
+		tmp->next = new;
+		new->numb = tmp->numb + 1;
 	}
 }
 

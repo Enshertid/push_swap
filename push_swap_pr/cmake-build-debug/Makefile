@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named push_swap
+# Target rules for targets named push_swap_pr
 
 # Build rule for target.
-push_swap: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 push_swap
-.PHONY : push_swap
+push_swap_pr: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 push_swap_pr
+.PHONY : push_swap_pr
 
 # fast build rule for target.
-push_swap/fast:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/build
-.PHONY : push_swap/fast
+push_swap_pr/fast:
+	$(MAKE) -f CMakeFiles/push_swap_pr.dir/build.make CMakeFiles/push_swap_pr.dir/build
+.PHONY : push_swap_pr/fast
 
 list_functions.o: list_functions.c.o
 
@@ -129,7 +129,7 @@ list_functions.o: list_functions.c.o
 
 # target to build an object file
 list_functions.c.o:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/list_functions.c.o
+	$(MAKE) -f CMakeFiles/push_swap_pr.dir/build.make CMakeFiles/push_swap_pr.dir/list_functions.c.o
 .PHONY : list_functions.c.o
 
 list_functions.i: list_functions.c.i
@@ -138,7 +138,7 @@ list_functions.i: list_functions.c.i
 
 # target to preprocess a source file
 list_functions.c.i:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/list_functions.c.i
+	$(MAKE) -f CMakeFiles/push_swap_pr.dir/build.make CMakeFiles/push_swap_pr.dir/list_functions.c.i
 .PHONY : list_functions.c.i
 
 list_functions.s: list_functions.c.s
@@ -147,7 +147,7 @@ list_functions.s: list_functions.c.s
 
 # target to generate assembly for a file
 list_functions.c.s:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/list_functions.c.s
+	$(MAKE) -f CMakeFiles/push_swap_pr.dir/build.make CMakeFiles/push_swap_pr.dir/list_functions.c.s
 .PHONY : list_functions.c.s
 
 operations_for_bothstacks.o: operations_for_bothstacks.c.o
@@ -156,7 +156,7 @@ operations_for_bothstacks.o: operations_for_bothstacks.c.o
 
 # target to build an object file
 operations_for_bothstacks.c.o:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/operations_for_bothstacks.c.o
+	$(MAKE) -f CMakeFiles/push_swap_pr.dir/build.make CMakeFiles/push_swap_pr.dir/operations_for_bothstacks.c.o
 .PHONY : operations_for_bothstacks.c.o
 
 operations_for_bothstacks.i: operations_for_bothstacks.c.i
@@ -165,7 +165,7 @@ operations_for_bothstacks.i: operations_for_bothstacks.c.i
 
 # target to preprocess a source file
 operations_for_bothstacks.c.i:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/operations_for_bothstacks.c.i
+	$(MAKE) -f CMakeFiles/push_swap_pr.dir/build.make CMakeFiles/push_swap_pr.dir/operations_for_bothstacks.c.i
 .PHONY : operations_for_bothstacks.c.i
 
 operations_for_bothstacks.s: operations_for_bothstacks.c.s
@@ -174,7 +174,7 @@ operations_for_bothstacks.s: operations_for_bothstacks.c.s
 
 # target to generate assembly for a file
 operations_for_bothstacks.c.s:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/operations_for_bothstacks.c.s
+	$(MAKE) -f CMakeFiles/push_swap_pr.dir/build.make CMakeFiles/push_swap_pr.dir/operations_for_bothstacks.c.s
 .PHONY : operations_for_bothstacks.c.s
 
 operations_for_singlestack.o: operations_for_singlestack.c.o
@@ -183,7 +183,7 @@ operations_for_singlestack.o: operations_for_singlestack.c.o
 
 # target to build an object file
 operations_for_singlestack.c.o:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/operations_for_singlestack.c.o
+	$(MAKE) -f CMakeFiles/push_swap_pr.dir/build.make CMakeFiles/push_swap_pr.dir/operations_for_singlestack.c.o
 .PHONY : operations_for_singlestack.c.o
 
 operations_for_singlestack.i: operations_for_singlestack.c.i
@@ -192,7 +192,7 @@ operations_for_singlestack.i: operations_for_singlestack.c.i
 
 # target to preprocess a source file
 operations_for_singlestack.c.i:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/operations_for_singlestack.c.i
+	$(MAKE) -f CMakeFiles/push_swap_pr.dir/build.make CMakeFiles/push_swap_pr.dir/operations_for_singlestack.c.i
 .PHONY : operations_for_singlestack.c.i
 
 operations_for_singlestack.s: operations_for_singlestack.c.s
@@ -201,8 +201,35 @@ operations_for_singlestack.s: operations_for_singlestack.c.s
 
 # target to generate assembly for a file
 operations_for_singlestack.c.s:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/operations_for_singlestack.c.s
+	$(MAKE) -f CMakeFiles/push_swap_pr.dir/build.make CMakeFiles/push_swap_pr.dir/operations_for_singlestack.c.s
 .PHONY : operations_for_singlestack.c.s
+
+parsing.o: parsing.c.o
+
+.PHONY : parsing.o
+
+# target to build an object file
+parsing.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_pr.dir/build.make CMakeFiles/push_swap_pr.dir/parsing.c.o
+.PHONY : parsing.c.o
+
+parsing.i: parsing.c.i
+
+.PHONY : parsing.i
+
+# target to preprocess a source file
+parsing.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_pr.dir/build.make CMakeFiles/push_swap_pr.dir/parsing.c.i
+.PHONY : parsing.c.i
+
+parsing.s: parsing.c.s
+
+.PHONY : parsing.s
+
+# target to generate assembly for a file
+parsing.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_pr.dir/build.make CMakeFiles/push_swap_pr.dir/parsing.c.s
+.PHONY : parsing.c.s
 
 push_swap.o: push_swap.c.o
 
@@ -210,7 +237,7 @@ push_swap.o: push_swap.c.o
 
 # target to build an object file
 push_swap.c.o:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/push_swap.c.o
+	$(MAKE) -f CMakeFiles/push_swap_pr.dir/build.make CMakeFiles/push_swap_pr.dir/push_swap.c.o
 .PHONY : push_swap.c.o
 
 push_swap.i: push_swap.c.i
@@ -219,7 +246,7 @@ push_swap.i: push_swap.c.i
 
 # target to preprocess a source file
 push_swap.c.i:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/push_swap.c.i
+	$(MAKE) -f CMakeFiles/push_swap_pr.dir/build.make CMakeFiles/push_swap_pr.dir/push_swap.c.i
 .PHONY : push_swap.c.i
 
 push_swap.s: push_swap.c.s
@@ -228,7 +255,7 @@ push_swap.s: push_swap.c.s
 
 # target to generate assembly for a file
 push_swap.c.s:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/push_swap.c.s
+	$(MAKE) -f CMakeFiles/push_swap_pr.dir/build.make CMakeFiles/push_swap_pr.dir/push_swap.c.s
 .PHONY : push_swap.c.s
 
 useful_functions_forstack.o: useful_functions_forstack.c.o
@@ -237,7 +264,7 @@ useful_functions_forstack.o: useful_functions_forstack.c.o
 
 # target to build an object file
 useful_functions_forstack.c.o:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/useful_functions_forstack.c.o
+	$(MAKE) -f CMakeFiles/push_swap_pr.dir/build.make CMakeFiles/push_swap_pr.dir/useful_functions_forstack.c.o
 .PHONY : useful_functions_forstack.c.o
 
 useful_functions_forstack.i: useful_functions_forstack.c.i
@@ -246,7 +273,7 @@ useful_functions_forstack.i: useful_functions_forstack.c.i
 
 # target to preprocess a source file
 useful_functions_forstack.c.i:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/useful_functions_forstack.c.i
+	$(MAKE) -f CMakeFiles/push_swap_pr.dir/build.make CMakeFiles/push_swap_pr.dir/useful_functions_forstack.c.i
 .PHONY : useful_functions_forstack.c.i
 
 useful_functions_forstack.s: useful_functions_forstack.c.s
@@ -255,7 +282,7 @@ useful_functions_forstack.s: useful_functions_forstack.c.s
 
 # target to generate assembly for a file
 useful_functions_forstack.c.s:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/useful_functions_forstack.c.s
+	$(MAKE) -f CMakeFiles/push_swap_pr.dir/build.make CMakeFiles/push_swap_pr.dir/useful_functions_forstack.c.s
 .PHONY : useful_functions_forstack.c.s
 
 # Help Target
@@ -266,7 +293,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... push_swap"
+	@echo "... push_swap_pr"
 	@echo "... list_functions.o"
 	@echo "... list_functions.i"
 	@echo "... list_functions.s"
@@ -276,6 +303,9 @@ help:
 	@echo "... operations_for_singlestack.o"
 	@echo "... operations_for_singlestack.i"
 	@echo "... operations_for_singlestack.s"
+	@echo "... parsing.o"
+	@echo "... parsing.i"
+	@echo "... parsing.s"
 	@echo "... push_swap.o"
 	@echo "... push_swap.i"
 	@echo "... push_swap.s"

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="push_swap" targetName="push_swap" />
+      <config projectName="push_swap_pr" targetName="push_swap_pr" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -13,14 +13,13 @@
   <component name="ChangeListManager">
     <list default="true" id="76046281-fa99-4624-83fc-e659be788322" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../push_swap_checker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../push_swap_checker/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap_checker/check_commands.c" beforeDir="false" afterPath="$PROJECT_DIR$/../push_swap_checker/check_commands.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../push_swap_checker/checker.c" beforeDir="false" afterPath="$PROJECT_DIR$/../push_swap_checker/checker.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../push_swap_checker/checker.h" beforeDir="false" afterPath="$PROJECT_DIR$/../push_swap_checker/checker.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeFiles/push_swap_checker.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeFiles/push_swap_checker.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeFiles/push_swap_checker.dir/check_commands.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeFiles/push_swap_checker.dir/check_commands.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeFiles/push_swap_checker.dir/checker.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeFiles/push_swap_checker.dir/checker.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeFiles/push_swap_checker.dir/list_functions.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/CMakeFiles/push_swap_checker.dir/list_functions.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/push_swap_checker" beforeDir="false" afterPath="$PROJECT_DIR$/../push_swap_checker/cmake-build-debug/push_swap_checker" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../push_swap_checker/list_functions.c" beforeDir="false" afterPath="$PROJECT_DIR$/../push_swap_checker/list_functions.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap_checker/file.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../push_swap_checker/file.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../push_swap_checker/operations_for_bothstacks.c" beforeDir="false" afterPath="$PROJECT_DIR$/../push_swap_checker/operations_for_bothstacks.c" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +31,9 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FavoritesManager">
+    <favorites_list name="push_swap_pr" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -46,6 +48,7 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
@@ -62,7 +65,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="push_swap" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="push_swap" TARGET_NAME="push_swap" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="push_swap" RUN_TARGET_NAME="push_swap">
+    <configuration name="push_swap_pr" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="3 1 5 0 6 2 9 10 -5" PASS_PARENT_ENVS_2="true" PROJECT_NAME="push_swap_pr" TARGET_NAME="push_swap_pr" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="push_swap_pr" RUN_TARGET_NAME="push_swap_pr">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -101,6 +104,22 @@
       <workItem from="1567768527852" duration="2000" />
       <workItem from="1567768553357" duration="642000" />
       <workItem from="1567770186145" duration="2277000" />
+      <workItem from="1568110986777" duration="74000" />
+      <workItem from="1568115756420" duration="397000" />
+      <workItem from="1568182866642" duration="396000" />
+      <workItem from="1568183517372" duration="2000" />
+      <workItem from="1568203961540" duration="2025000" />
+      <workItem from="1568446448617" duration="27000" />
+      <workItem from="1568446501358" duration="1573000" />
+      <workItem from="1568458932496" duration="4095000" />
+      <workItem from="1568467796939" duration="1849000" />
+      <workItem from="1568535366269" duration="1326000" />
+      <workItem from="1568543503715" duration="5577000" />
+      <workItem from="1568619401723" duration="521000" />
+      <workItem from="1568621233904" duration="7977000" />
+      <workItem from="1568640089830" duration="420000" />
+      <workItem from="1568729723279" duration="645000" />
+      <workItem from="1568797708009" duration="195000" />
     </task>
     <servers />
   </component>
@@ -124,10 +143,14 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="CMakeRunConfiguration">
-        <watch expression="stack-&gt;num" language="ObjectiveC" />
-      </configuration>
-    </watches-manager>
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/push_swap.c</url>
+          <line>155</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -151,7 +151,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=push_swap
+CMAKE_PROJECT_NAME:STATIC=push_swap_pr
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib
@@ -220,6 +220,12 @@ push_swap_BINARY_DIR:STATIC=/Users/ymanilow/curcus42/push_swap/push_swap_pr/cmak
 
 //Value Computed by CMake
 push_swap_SOURCE_DIR:STATIC=/Users/ymanilow/curcus42/push_swap/push_swap_pr
+
+//Value Computed by CMake
+push_swap_pr_BINARY_DIR:STATIC=/Users/ymanilow/curcus42/push_swap/push_swap_pr/cmake-build-debug
+
+//Value Computed by CMake
+push_swap_pr_SOURCE_DIR:STATIC=/Users/ymanilow/curcus42/push_swap/push_swap_pr
 
 
 ########################

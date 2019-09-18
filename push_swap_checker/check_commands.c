@@ -6,7 +6,7 @@
 /*   By: ymanilow <ymanilow@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/09 11:53:13 by ymanilow          #+#    #+#             */
-/*   Updated: 2019/09/09 14:30:30 by ymanilow         ###   ########.fr       */
+/*   Updated: 2019/09/10 12:25:51 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,8 @@ int			ft_check_commands(t_stacks *point)
 			ft_list_of_command_add(&point->commands, ft_list_create(0, 0, ln));
 		free(ln);
 	}
+	if (!point->commands)
+		return (0);
 	point->head = point->commands;
 	return (1);
 }

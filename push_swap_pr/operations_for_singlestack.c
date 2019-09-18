@@ -75,8 +75,8 @@ void			ft_reverse_rotate(t_stack **head)
 			tmp = tmp->next;
 		while (tmp1->next != tmp)
 			tmp1 = tmp1->next;
-		tmp1->next = NULL;
 		tmp->next = *head;
+		tmp1->next = NULL;
 		*head = tmp;
 	}
 }

@@ -6,16 +6,17 @@
 #    By: ymanilow <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/04 11:41:35 by ymanilow          #+#    #+#              #
-#    Updated: 2019/09/05 11:01:25 by ymanilow         ###   ########.fr        #
+#    Updated: 2019/09/10 13:23:09 by ymanilow         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = push_swap
 
-SRCS_C = ./main.c\
+SRCS_C = ./push_swap.c\
 		 ./list_functions.c\
 		 ./useful_functions_forstack.c\
-		 ./operations.c\
+		 ./operations_for_bothstacks.c\
+		 ./operations_for_singlestack.c\
 
 SRCS_CO = $(SRCS_C:.c=.o)\
 			libft/*.o
