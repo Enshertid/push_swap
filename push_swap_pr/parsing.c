@@ -6,7 +6,7 @@
 /*   By: ymanilow <ymanilow@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/06 17:13:37 by ymanilow          #+#    #+#             */
-/*   Updated: 2019/09/09 17:07:12 by ymanilow         ###   ########.fr       */
+/*   Updated: 2019/10/05 19:11:59 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -109,9 +109,11 @@ int				ft_check_repeats(t_stacks point)
 	return (1);
 }
 
-int			ft_parsing(t_stacks *point, char **str, int ac)
+int			ft_parsing(t_stacks *point, char **str, int ac, t_lst *pre_sort)
 {
 	int i;
+	int ln;
+	t_stack		*tmp;
 
 	i = 1;
 	if (ac < 2)
@@ -125,5 +127,13 @@ int			ft_parsing(t_stacks *point, char **str, int ac)
 	}
 	if (!ft_check_repeats(*point))
 		return(0);
+	ln = ft_check_lenght_of_stack(point->stack_a);
+	pre_sort->array = malloc(sizeof(int) * ln);
+	tmp = point->stack_a;
+	while (tmp)
+	{
+		pre_sort->array[--ln] = tmp->num;
+		tmp = tmp->next;
+	}
 	return (1);
 }

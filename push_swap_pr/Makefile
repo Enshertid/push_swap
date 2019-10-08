@@ -6,7 +6,7 @@
 #    By: ymanilow <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/04 11:41:35 by ymanilow          #+#    #+#              #
-#    Updated: 2019/09/10 13:23:09 by ymanilow         ###   ########.fr        #
+#    Updated: 2019/10/05 17:35:48 by ymanilow         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,6 +17,7 @@ SRCS_C = ./push_swap.c\
 		 ./useful_functions_forstack.c\
 		 ./operations_for_bothstacks.c\
 		 ./operations_for_singlestack.c\
+		 ./parsing.c\
 
 SRCS_CO = $(SRCS_C:.c=.o)\
 			libft/*.o
@@ -24,15 +25,15 @@ SRCS_CO = $(SRCS_C:.c=.o)\
 all: $(NAME)
 
 $(NAME):
-	make -C ./libft/
-	gcc -Wall -Werror -Wextra -Ipush_swap.h ./libft/libft.a $(SRCS_C) -o push_swap
+	@make -C ./ft_printf/
+	@gcc -Wall -Werror -Wextra -Ipush_swap.h ./ft_printf/libftprintf.a $(SRCS_C) -o push_swap
 
 clean:
-	@make clean -C ./libft/
+	@make clean -C ./ft_printf/
 	@rm -f $(SRCS_O)
 
 fclean: clean
-	@make fclean -C ./libft/
+	@make fclean -C ./ft_printf/
 	@rm -Rf ./push_swap
 a: fclean all
 	clear

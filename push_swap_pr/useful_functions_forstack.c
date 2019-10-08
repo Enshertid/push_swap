@@ -6,7 +6,7 @@
 /*   By: ymanilow <ymanilow@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 17:55:37 by ymanilow          #+#    #+#             */
-/*   Updated: 2019/09/05 17:55:37 by ymanilow         ###   ########.fr       */
+/*   Updated: 2019/10/05 17:29:15 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@ void			ft_stack_list_add(t_stack **head, t_stack *new)
 		while (tmp->next)
 			tmp = tmp->next;
 		tmp->next = new;
-		new->numb = tmp->numb + 1;
 	}
 }
 
@@ -49,6 +48,7 @@ void			ft_print_stack(t_stack *stack, int ln)
 	int i;
 
 	i = 0;
+	ft_printf("\nstart of stack \n");
 	if (stack)
 	{
 		while (i < ln)

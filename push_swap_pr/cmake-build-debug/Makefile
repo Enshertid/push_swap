@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Users/ymanilow/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /Users/ymanilow/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/ymanilow/curcus42/push_swap/push_swap_pr/cmake-build-d
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Users/ymanilow/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Users/ymanilow/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -122,6 +122,60 @@ push_swap_pr: cmake_check_build_system
 push_swap_pr/fast:
 	$(MAKE) -f CMakeFiles/push_swap_pr.dir/build.make CMakeFiles/push_swap_pr.dir/build
 .PHONY : push_swap_pr/fast
+
+check_op.o: check_op.c.o
+
+.PHONY : check_op.o
+
+# target to build an object file
+check_op.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_pr.dir/build.make CMakeFiles/push_swap_pr.dir/check_op.c.o
+.PHONY : check_op.c.o
+
+check_op.i: check_op.c.i
+
+.PHONY : check_op.i
+
+# target to preprocess a source file
+check_op.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_pr.dir/build.make CMakeFiles/push_swap_pr.dir/check_op.c.i
+.PHONY : check_op.c.i
+
+check_op.s: check_op.c.s
+
+.PHONY : check_op.s
+
+# target to generate assembly for a file
+check_op.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_pr.dir/build.make CMakeFiles/push_swap_pr.dir/check_op.c.s
+.PHONY : check_op.c.s
+
+filling_op_point.o: filling_op_point.c.o
+
+.PHONY : filling_op_point.o
+
+# target to build an object file
+filling_op_point.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_pr.dir/build.make CMakeFiles/push_swap_pr.dir/filling_op_point.c.o
+.PHONY : filling_op_point.c.o
+
+filling_op_point.i: filling_op_point.c.i
+
+.PHONY : filling_op_point.i
+
+# target to preprocess a source file
+filling_op_point.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_pr.dir/build.make CMakeFiles/push_swap_pr.dir/filling_op_point.c.i
+.PHONY : filling_op_point.c.i
+
+filling_op_point.s: filling_op_point.c.s
+
+.PHONY : filling_op_point.s
+
+# target to generate assembly for a file
+filling_op_point.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_pr.dir/build.make CMakeFiles/push_swap_pr.dir/filling_op_point.c.s
+.PHONY : filling_op_point.c.s
 
 list_functions.o: list_functions.c.o
 
@@ -231,6 +285,33 @@ parsing.c.s:
 	$(MAKE) -f CMakeFiles/push_swap_pr.dir/build.make CMakeFiles/push_swap_pr.dir/parsing.c.s
 .PHONY : parsing.c.s
 
+pre_sort_stacks.o: pre_sort_stacks.c.o
+
+.PHONY : pre_sort_stacks.o
+
+# target to build an object file
+pre_sort_stacks.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_pr.dir/build.make CMakeFiles/push_swap_pr.dir/pre_sort_stacks.c.o
+.PHONY : pre_sort_stacks.c.o
+
+pre_sort_stacks.i: pre_sort_stacks.c.i
+
+.PHONY : pre_sort_stacks.i
+
+# target to preprocess a source file
+pre_sort_stacks.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_pr.dir/build.make CMakeFiles/push_swap_pr.dir/pre_sort_stacks.c.i
+.PHONY : pre_sort_stacks.c.i
+
+pre_sort_stacks.s: pre_sort_stacks.c.s
+
+.PHONY : pre_sort_stacks.s
+
+# target to generate assembly for a file
+pre_sort_stacks.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_pr.dir/build.make CMakeFiles/push_swap_pr.dir/pre_sort_stacks.c.s
+.PHONY : pre_sort_stacks.c.s
+
 push_swap.o: push_swap.c.o
 
 .PHONY : push_swap.o
@@ -294,6 +375,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... push_swap_pr"
+	@echo "... check_op.o"
+	@echo "... check_op.i"
+	@echo "... check_op.s"
+	@echo "... filling_op_point.o"
+	@echo "... filling_op_point.i"
+	@echo "... filling_op_point.s"
 	@echo "... list_functions.o"
 	@echo "... list_functions.i"
 	@echo "... list_functions.s"
@@ -306,6 +393,9 @@ help:
 	@echo "... parsing.o"
 	@echo "... parsing.i"
 	@echo "... parsing.s"
+	@echo "... pre_sort_stacks.o"
+	@echo "... pre_sort_stacks.i"
+	@echo "... pre_sort_stacks.s"
 	@echo "... push_swap.o"
 	@echo "... push_swap.i"
 	@echo "... push_swap.s"

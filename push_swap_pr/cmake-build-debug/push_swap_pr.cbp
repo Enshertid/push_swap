@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/ymanilow/curcus42/push_swap/push_swap_pr/check_op.c">
+			<Option target="push_swap_pr"/>
+		</Unit>
+		<Unit filename="/Users/ymanilow/curcus42/push_swap/push_swap_pr/filling_op_point.c">
+			<Option target="push_swap_pr"/>
+		</Unit>
 		<Unit filename="/Users/ymanilow/curcus42/push_swap/push_swap_pr/list_functions.c">
 			<Option target="push_swap_pr"/>
 		</Unit>
@@ -94,6 +100,9 @@
 			<Option target="push_swap_pr"/>
 		</Unit>
 		<Unit filename="/Users/ymanilow/curcus42/push_swap/push_swap_pr/parsing.c">
+			<Option target="push_swap_pr"/>
+		</Unit>
+		<Unit filename="/Users/ymanilow/curcus42/push_swap/push_swap_pr/pre_sort_stacks.c">
 			<Option target="push_swap_pr"/>
 		</Unit>
 		<Unit filename="/Users/ymanilow/curcus42/push_swap/push_swap_pr/push_swap.c">

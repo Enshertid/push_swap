@@ -6,163 +6,224 @@
 /*   By: ymanilow <ymanilow@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/03 09:58:49 by ymanilow          #+#    #+#             */
-/*   Updated: 2019/09/11 15:28:12 by ymanilow         ###   ########.fr       */
+/*   Updated: 2019/10/08 11:53:13 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void			ft_sort_small_stack(t_stack **stack_a)
+int				ft_mod_num(int num)
 {
-	t_stack *tmp;
-
-	tmp = *stack_a;
-	while (tmp->next)
-		tmp = tmp->next;
-	if (((*stack_a)->num > (*stack_a)->next->num &&
-				(*stack_a)->next->num < tmp->num) ||
-				((*stack_a)->num > (*stack_a)->next->num &&
-				(*stack_a)->next->num > tmp->num) ||
-			((*stack_a)->num < tmp->num && (*stack_a)->num <
-			(*stack_a)->next->num && (*stack_a)->next->num > tmp->num))
-		ft_swap_stack(stack_a);
+	return (num < 0 ? (-num) : num);
 }
 
-void			ft_get_numb(t_stacks *point)
-{
-	int			i;
-	t_stack		*tmp_a;
-	t_stack		*tmp_b;
 
-	tmp_a = point->stack_a;
-	tmp_b = point->stack_b;
-	i = 0;
-	while (tmp_a->next)
-	{
-		tmp_a->numb = i++;
-		tmp_a = tmp_a->next;
-	}
-	tmp_a->numb = i;
-	i = 0;
-	while (tmp_b->next)
-	{
-		tmp_b->numb = i++;
-		tmp_b = tmp_b->next;
-	}
-	tmp_b->numb = i;
+
+int				ft_synchrone(int num1, int num2)
+{
+	if ((num1 < 0 && num2 < 0) || (num1 > 0 && num2 > 0) ||
+			(num1 == 0 && num2 == 0))
+		return (1);
+	return (0);
 }
 
-void			ft_priority_on_stacks(t_stack **stack_b, t_stack **stack_a)
+void				ft_use_without_synchrone(int op_a, int op_b, t_stacks *point, int type)
 {
-	t_stack *tmp_b;
-	t_stack *tmp_a;
-	int ln_a;
-	int ln_b;
+	t_stack **stack_a;
+	t_stack **stack_b;
 
-	ln_a = ft_check_lenght_of_stack(*stack_a);
-	ln_b = ft_check_lenght_of_stack(*stack_b);
-	tmp_b = *stack_b;
-	tmp_b->op_b = tmp_b->numb;
-	while (tmp_b->numb  < ln_b / 2)
+	if (type == 1)
 	{
-		tmp_b = tmp_b->next;
-		tmp_b->op_b = tmp_b->numb;
+		stack_a = &point->stack_a;
+		stack_b = &point->stack_b;
 	}
-	while (tmp_b->next)
+	else
 	{
-		tmp_b = tmp_b->next;
-		tmp_b->op_b = ln_b - tmp_b->numb;
+		stack_b = &point->stack_a;
+		stack_a = &point->stack_b;
 	}
-	tmp_b = *stack_b;
-	tmp_a = *stack_a;
-	while (tmp_b)
+	while (op_a != 0)
 	{
-		while (tmp_a->next && tmp_b->num > tmp_a->num)
-			tmp_a = tmp_a->next;
-		if (tmp_a->numb == 0)
-		{
-			while (tmp_a->next && tmp_b->numb < tmp_a->numb)
-				tmp_a = tmp_a->next;
-			if (tmp_b->num > tmp_a->num)
-				tmp_b->op_a = ln_a - tmp_a->numb;
-		}
-		else if (tmp_b->num < tmp_a->num)
-		{
-			if (tmp_a->numb < ln_a / 2)
-				tmp_b->op_a = tmp_a->numb;
-		}
-		if (tmp_b->next)
-			tmp_b = tmp_b->next;
-		else
-			break;
-		tmp_a = *stack_a;
+		op_a--;
+		ft_rotate_stack(stack_a, 1, 1);
 	}
-}
-
-void			ft_operation_on_stacks(t_stacks *point)
-{
-	int			best;
-	int			op_b;
-	int			op_a;
-	t_stack		*tmp_best;
-	t_stack		*tmp_b;
-
-	tmp_best = point->stack_b;
-	best = point->stack_b->op_a + point->stack_b->op_b;
-	tmp_b = point->stack_b;
-	while (tmp_b)
+	while (op_b != 0)
 	{
-		if (best > tmp_b->op_b + tmp_b->op_a)
-		{
-			best = tmp_b->op_a + tmp_b->op_b;
-			tmp_best = tmp_b;
-		}
-		if (tmp_b->next)
-			tmp_b = tmp_b->next;
-		else
-			break;
-	}
-	op_b = tmp_best->op_b;
-	op_a = tmp_best->op_a;
-	while (op_b > 0)
-	{
-		ft_rotate_stack(&point->stack_b);
 		op_b--;
+		ft_reverse_rotate(stack_b, 0, 0);
 	}
-	while(op_a > 0)
+}
+
+void			ft_use_reverse_rotate(t_stacks *point, int op_a, int op_b)
+{
+	if (op_a > op_b)
+		while (op_a != op_b)
+		{
+			ft_reverse_rotate(&point->stack_a, 1, 1);
+			op_a--;
+		}
+	else if (op_b > op_a)
+		while (op_b != op_a)
+		{
+			ft_reverse_rotate(&point->stack_b, 0, 1);
+			op_b--;
+		}
+	while (op_a != 0)
 	{
-		ft_rotate_stack(&point->stack_a);
+		ft_reverse_all(&point->stack_a, &point->stack_b);
 		op_a--;
 	}
-	ft_push_stack(&point->stack_b, &point->stack_a);
+}
+
+void			ft_use_rotate(t_stacks *point, int op_a, int op_b)
+{
+	if (op_a != op_b)
+	{
+		if (op_a > op_b)
+			while (op_a != op_b)
+			{
+				ft_rotate_stack(&point->stack_a, 1, 1);
+				op_a--;
+			}
+		else
+			while (op_b != op_a)
+			{
+				ft_rotate_stack(&point->stack_b, 0, 1);
+				op_b--;
+			}
+	}
+	while (op_a != 0)
+	{
+		ft_rotate_all(&point->stack_a, &point->stack_b);
+		op_a--;
+	}
+}
+
+
+void			ft_use_operation(t_stack *tmp, t_stacks *point)
+{
+	int				op_a;
+	int				op_b;
+
+	op_a = tmp->op_a;
+	op_b = tmp->op_b;
+	if (ft_synchrone(op_a, op_b))
+	{
+		if (op_a > 0)
+			ft_use_rotate (point, op_a, op_b);
+		else if (op_a < 0)
+			ft_use_reverse_rotate(point, ft_mod_num(op_a), ft_mod_num(op_b));
+	}
+	else
+	{
+		if (op_a >= 0 && op_b <= 0)
+			ft_use_without_synchrone(op_a, ft_mod_num(op_b), point, 1);
+		else if (op_a <= 0 && op_b >= 0)
+			ft_use_without_synchrone(op_b, ft_mod_num(op_a), point, 0);
+	}
+	ft_push_stack(&point->stack_b, &point->stack_a, 0);
+}
+
+int				ft_check_big(int num1, int num2)
+{
+	return (num1 >= num2 ? num1 : num2);
+}
+
+int				ft_check_without_synchrone(t_stack *tmp)
+{
+	return (ft_mod_num(tmp->op_a) + ft_mod_num(tmp->op_b));
+}
+
+int				ft_check_with_synchrone(t_stack *tmp)
+{
+	if (tmp->op_a > 0)
+		return (ft_check_big(tmp->op_a, tmp->op_b));
+	else if (tmp->op_a < 0)
+		return (ft_check_big(ft_mod_num(tmp->op_a), ft_mod_num(tmp->op_b)));
+	else
+		return (0);
+}
+
+void			ft_use_op(t_stacks *point)
+{
+	int			best;
+	t_stack		*tmp_b;
+	t_stack		*tmp_best;
+
+	best = 9999;
+	tmp_best = point->stack_b;
+	tmp_b = point->stack_b;
+	while (tmp_b)
+	{
+		if (ft_synchrone(tmp_b->op_a, tmp_b->op_b) == 1 &&
+			best > ft_check_with_synchrone(tmp_b))
+		{
+				best = ft_check_with_synchrone(tmp_b);
+				tmp_best = tmp_b;
+		}
+		else if (ft_synchrone(tmp_b->op_a, tmp_b->op_b) == 0 &&
+				best > ft_check_without_synchrone(tmp_b))
+		{
+				best = ft_check_without_synchrone(tmp_b);
+				tmp_best = tmp_b;
+		}
+		tmp_b = tmp_b->next;
+	}
+	ft_use_operation(tmp_best, point);
+}
+
+void			ft_check_sorted_stack(t_stack **stack, t_stacks *point)
+{
+	int			ln;
+	int			gap;
+
+	ln = ft_check_lenght_of_stack(*stack);
+	if ((gap = ft_is_gap(*stack)) > 0)
+	{
+		if (gap <= ln / 2)
+			while ((ft_is_gap(*stack) > 0))
+				ft_rotate_stack(&point->stack_a, 1, 1);
+		else
+			while ((ft_is_gap(*stack) > 0))
+				ft_reverse_rotate(&point->stack_a, 1, 1);
+	}
+	if ((*stack)->num > (*stack)->next->num)
+		ft_rotate_stack(&point->stack_a, 1, 1);
+}
+
+int				ft_error(t_stacks *point)
+{
+	if (point->stack_a)
+		ft_list_delete(point);
+	ft_printf("Error\n");
+	return (0);
+}
+
+void			ft_sort_of_stack(t_stacks *point, t_lst *pre_sort)
+{
+	ft_pre_sort(pre_sort, point);
+	while (point->stack_b)
+	{
+		ft_get_op_b(&point->stack_b);
+		ft_get_op_a(point);
+		ft_use_op(point);
+	}
+	ft_check_sorted_stack(&point->stack_a, point);
 }
 
 int				main(int ac, char **av)
 {
-	t_stacks	point;
+	t_stacks		point;
+	t_lst			pre_sort;
 
-	ft_struct_zero(&point);
-	if (!ft_parsing(&point, av, ac))
-	{
-		printf("Error\n");
-		return (0);
-	}
-	ft_print_stack(point.stack_a, ft_check_lenght_of_stack(point.stack_a));
-	while (ft_check_lenght_of_stack(point.stack_a) != 3)
-		ft_push_stack(&point.stack_a, &point.stack_b);
-	ft_print_stack(point.stack_a, ft_check_lenght_of_stack(point.stack_a));
-	ft_print_stack(point.stack_b, ft_check_lenght_of_stack(point.stack_b));
-	ft_sort_small_stack(&point.stack_a);
-	while (point.stack_b)
-	{
-		ft_get_numb(&point);
-		ft_priority_on_stacks(&point.stack_b, &point.stack_a);
-		ft_operation_on_stacks(&point);
-		ft_print_stack(point.stack_a, ft_check_lenght_of_stack(point.stack_a));
-		ft_print_stack(point.stack_b, ft_check_lenght_of_stack(point.stack_b));
-	}
+	ft_struct_zero(&point, &pre_sort);
+	if (!ft_parsing(&point, av, ac, &pre_sort))
+		ft_error(&point);
+	ft_sort_of_stack(&point, &pre_sort);
 	ft_print_stack(point.stack_a, ft_check_lenght_of_stack(point.stack_a));
 	ft_list_delete(&point);
-	printf("Hello, World!\n");
-	return 0;
+	free(pre_sort.array);
+	return (0);
 }
+
+// стэк меньше трех падает сегой

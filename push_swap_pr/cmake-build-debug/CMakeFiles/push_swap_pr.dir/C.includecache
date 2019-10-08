@@ -6,7 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/Users/ymanilow/curcus42/push_swap/push_swap_pr/libft/includes/libft.h
+/Users/ymanilow/curcus42/push_swap/push_swap_pr/ft_printf/ft_printf.h
+stdlib.h
+-
+stdarg.h
+-
+libft/includes/libft.h
+/Users/ymanilow/curcus42/push_swap/push_swap_pr/ft_printf/libft/includes/libft.h
+stddef.h
+-
+
+/Users/ymanilow/curcus42/push_swap/push_swap_pr/ft_printf/libft/includes/libft.h
 stdlib.h
 -
 unistd.h
@@ -17,18 +27,12 @@ string.h
 -
 stdarg.h
 -
-sys/types.h
--
-sys/stat.h
--
-fcntl.h
--
 
-/Users/ymanilow/curcus42/push_swap/push_swap_pr/push_swap.c
+/Users/ymanilow/curcus42/push_swap/push_swap_pr/operations_for_singlestack.c
 push_swap.h
 /Users/ymanilow/curcus42/push_swap/push_swap_pr/push_swap.h
 
 /Users/ymanilow/curcus42/push_swap/push_swap_pr/push_swap.h
-libft/includes/libft.h
-/Users/ymanilow/curcus42/push_swap/push_swap_pr/libft/includes/libft.h
+ft_printf/ft_printf.h
+/Users/ymanilow/curcus42/push_swap/push_swap_pr/ft_printf/ft_printf.h
 

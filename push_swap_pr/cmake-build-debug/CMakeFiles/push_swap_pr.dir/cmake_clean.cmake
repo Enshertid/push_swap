@@ -5,6 +5,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/push_swap_pr.dir/useful_functions_forstack.c.o"
   "CMakeFiles/push_swap_pr.dir/operations_for_bothstacks.c.o"
   "CMakeFiles/push_swap_pr.dir/parsing.c.o"
+  "CMakeFiles/push_swap_pr.dir/check_op.c.o"
+  "CMakeFiles/push_swap_pr.dir/filling_op_point.c.o"
+  "CMakeFiles/push_swap_pr.dir/pre_sort_stacks.c.o"
   "push_swap_pr.pdb"
   "push_swap_pr"
 )
