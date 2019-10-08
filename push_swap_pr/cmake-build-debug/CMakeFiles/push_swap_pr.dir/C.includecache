@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+/Users/ymanilow/curcus42/push_swap/push_swap_pr/check_op.c
+push_swap.h
+/Users/ymanilow/curcus42/push_swap/push_swap_pr/push_swap.h
+
+/Users/ymanilow/curcus42/push_swap/push_swap_pr/filling_op_point.c
+push_swap.h
+/Users/ymanilow/curcus42/push_swap/push_swap_pr/push_swap.h
+
 /Users/ymanilow/curcus42/push_swap/push_swap_pr/ft_printf/ft_printf.h
 stdlib.h
 -
@@ -28,11 +36,39 @@ string.h
 stdarg.h
 -
 
+/Users/ymanilow/curcus42/push_swap/push_swap_pr/list_functions.c
+push_swap.h
+/Users/ymanilow/curcus42/push_swap/push_swap_pr/push_swap.h
+
+/Users/ymanilow/curcus42/push_swap/push_swap_pr/operations_for_bothstacks.c
+push_swap.h
+/Users/ymanilow/curcus42/push_swap/push_swap_pr/push_swap.h
+
 /Users/ymanilow/curcus42/push_swap/push_swap_pr/operations_for_singlestack.c
+push_swap.h
+/Users/ymanilow/curcus42/push_swap/push_swap_pr/push_swap.h
+
+/Users/ymanilow/curcus42/push_swap/push_swap_pr/parsing.c
+push_swap.h
+/Users/ymanilow/curcus42/push_swap/push_swap_pr/push_swap.h
+
+/Users/ymanilow/curcus42/push_swap/push_swap_pr/pre_sort_stacks.c
+push_swap.h
+/Users/ymanilow/curcus42/push_swap/push_swap_pr/push_swap.h
+
+/Users/ymanilow/curcus42/push_swap/push_swap_pr/push_swap.c
 push_swap.h
 /Users/ymanilow/curcus42/push_swap/push_swap_pr/push_swap.h
 
 /Users/ymanilow/curcus42/push_swap/push_swap_pr/push_swap.h
 ft_printf/ft_printf.h
 /Users/ymanilow/curcus42/push_swap/push_swap_pr/ft_printf/ft_printf.h
+
+/Users/ymanilow/curcus42/push_swap/push_swap_pr/use_operations.c
+push_swap.h
+/Users/ymanilow/curcus42/push_swap/push_swap_pr/push_swap.h
+
+/Users/ymanilow/curcus42/push_swap/push_swap_pr/useful_functions_forstack.c
+push_swap.h
+/Users/ymanilow/curcus42/push_swap/push_swap_pr/push_swap.h
 

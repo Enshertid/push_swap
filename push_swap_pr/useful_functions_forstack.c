@@ -6,7 +6,7 @@
 /*   By: ymanilow <ymanilow@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 17:55:37 by ymanilow          #+#    #+#             */
-/*   Updated: 2019/10/05 17:29:15 by ymanilow         ###   ########.fr       */
+/*   Updated: 2019/10/08 12:59:13 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,16 +48,16 @@ void			ft_print_stack(t_stack *stack, int ln)
 	int i;
 
 	i = 0;
-	ft_printf("\nstart of stack \n");
+	ft_printf("\nstart of stack\n");
 	if (stack)
 	{
 		while (i < ln)
 		{
-			printf("%d\n", stack->num);
+			ft_printf("%d\n", stack->num);
 			if (stack->next)
 				stack = stack->next;
 			i++;
 		}
-		printf("end of stack\n");
+		ft_printf("end of stack\n");
 	}
 }

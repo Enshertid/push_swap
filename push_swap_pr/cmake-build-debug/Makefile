@@ -177,6 +177,33 @@ filling_op_point.c.s:
 	$(MAKE) -f CMakeFiles/push_swap_pr.dir/build.make CMakeFiles/push_swap_pr.dir/filling_op_point.c.s
 .PHONY : filling_op_point.c.s
 
+functions_for_operations.o: functions_for_operations.c.o
+
+.PHONY : functions_for_operations.o
+
+# target to build an object file
+functions_for_operations.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_pr.dir/build.make CMakeFiles/push_swap_pr.dir/functions_for_operations.c.o
+.PHONY : functions_for_operations.c.o
+
+functions_for_operations.i: functions_for_operations.c.i
+
+.PHONY : functions_for_operations.i
+
+# target to preprocess a source file
+functions_for_operations.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_pr.dir/build.make CMakeFiles/push_swap_pr.dir/functions_for_operations.c.i
+.PHONY : functions_for_operations.c.i
+
+functions_for_operations.s: functions_for_operations.c.s
+
+.PHONY : functions_for_operations.s
+
+# target to generate assembly for a file
+functions_for_operations.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_pr.dir/build.make CMakeFiles/push_swap_pr.dir/functions_for_operations.c.s
+.PHONY : functions_for_operations.c.s
+
 list_functions.o: list_functions.c.o
 
 .PHONY : list_functions.o
@@ -339,6 +366,33 @@ push_swap.c.s:
 	$(MAKE) -f CMakeFiles/push_swap_pr.dir/build.make CMakeFiles/push_swap_pr.dir/push_swap.c.s
 .PHONY : push_swap.c.s
 
+use_operations.o: use_operations.c.o
+
+.PHONY : use_operations.o
+
+# target to build an object file
+use_operations.c.o:
+	$(MAKE) -f CMakeFiles/push_swap_pr.dir/build.make CMakeFiles/push_swap_pr.dir/use_operations.c.o
+.PHONY : use_operations.c.o
+
+use_operations.i: use_operations.c.i
+
+.PHONY : use_operations.i
+
+# target to preprocess a source file
+use_operations.c.i:
+	$(MAKE) -f CMakeFiles/push_swap_pr.dir/build.make CMakeFiles/push_swap_pr.dir/use_operations.c.i
+.PHONY : use_operations.c.i
+
+use_operations.s: use_operations.c.s
+
+.PHONY : use_operations.s
+
+# target to generate assembly for a file
+use_operations.c.s:
+	$(MAKE) -f CMakeFiles/push_swap_pr.dir/build.make CMakeFiles/push_swap_pr.dir/use_operations.c.s
+.PHONY : use_operations.c.s
+
 useful_functions_forstack.o: useful_functions_forstack.c.o
 
 .PHONY : useful_functions_forstack.o
@@ -381,6 +435,9 @@ help:
 	@echo "... filling_op_point.o"
 	@echo "... filling_op_point.i"
 	@echo "... filling_op_point.s"
+	@echo "... functions_for_operations.o"
+	@echo "... functions_for_operations.i"
+	@echo "... functions_for_operations.s"
 	@echo "... list_functions.o"
 	@echo "... list_functions.i"
 	@echo "... list_functions.s"
@@ -399,6 +456,9 @@ help:
 	@echo "... push_swap.o"
 	@echo "... push_swap.i"
 	@echo "... push_swap.s"
+	@echo "... use_operations.o"
+	@echo "... use_operations.i"
+	@echo "... use_operations.s"
 	@echo "... useful_functions_forstack.o"
 	@echo "... useful_functions_forstack.i"
 	@echo "... useful_functions_forstack.s"

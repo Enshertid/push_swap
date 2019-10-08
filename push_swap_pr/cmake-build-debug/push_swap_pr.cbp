@@ -90,6 +90,9 @@
 		<Unit filename="/Users/ymanilow/curcus42/push_swap/push_swap_pr/filling_op_point.c">
 			<Option target="push_swap_pr"/>
 		</Unit>
+		<Unit filename="/Users/ymanilow/curcus42/push_swap/push_swap_pr/functions_for_operations.c">
+			<Option target="push_swap_pr"/>
+		</Unit>
 		<Unit filename="/Users/ymanilow/curcus42/push_swap/push_swap_pr/list_functions.c">
 			<Option target="push_swap_pr"/>
 		</Unit>
@@ -109,6 +112,9 @@
 			<Option target="push_swap_pr"/>
 		</Unit>
 		<Unit filename="/Users/ymanilow/curcus42/push_swap/push_swap_pr/push_swap.h">
+			<Option target="push_swap_pr"/>
+		</Unit>
+		<Unit filename="/Users/ymanilow/curcus42/push_swap/push_swap_pr/use_operations.c">
 			<Option target="push_swap_pr"/>
 		</Unit>
 		<Unit filename="/Users/ymanilow/curcus42/push_swap/push_swap_pr/useful_functions_forstack.c">

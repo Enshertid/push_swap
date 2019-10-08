@@ -8,6 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/push_swap_pr.dir/check_op.c.o"
   "CMakeFiles/push_swap_pr.dir/filling_op_point.c.o"
   "CMakeFiles/push_swap_pr.dir/pre_sort_stacks.c.o"
+  "CMakeFiles/push_swap_pr.dir/use_operations.c.o"
+  "CMakeFiles/push_swap_pr.dir/functions_for_operations.c.o"
   "push_swap_pr.pdb"
   "push_swap_pr"
 )

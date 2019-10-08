@@ -41,6 +41,11 @@ CMakeFiles/push_swap_pr.dir/push_swap.c.o: ../ft_printf/libft/includes/libft.h
 CMakeFiles/push_swap_pr.dir/push_swap.c.o: ../push_swap.c
 CMakeFiles/push_swap_pr.dir/push_swap.c.o: ../push_swap.h
 
+CMakeFiles/push_swap_pr.dir/use_operations.c.o: ../ft_printf/ft_printf.h
+CMakeFiles/push_swap_pr.dir/use_operations.c.o: ../ft_printf/libft/includes/libft.h
+CMakeFiles/push_swap_pr.dir/use_operations.c.o: ../push_swap.h
+CMakeFiles/push_swap_pr.dir/use_operations.c.o: ../use_operations.c
+
 CMakeFiles/push_swap_pr.dir/useful_functions_forstack.c.o: ../ft_printf/ft_printf.h
 CMakeFiles/push_swap_pr.dir/useful_functions_forstack.c.o: ../ft_printf/libft/includes/libft.h
 CMakeFiles/push_swap_pr.dir/useful_functions_forstack.c.o: ../push_swap.h

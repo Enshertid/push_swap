@@ -6,7 +6,7 @@
 /*   By: ymanilow <ymanilow@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/06 12:36:50 by ymanilow          #+#    #+#             */
-/*   Updated: 2019/10/08 11:40:57 by ymanilow         ###   ########.fr       */
+/*   Updated: 2019/10/08 13:08:58 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /* ************************************************************************** */
@@ -75,8 +75,18 @@ void				ft_bubble_sort(int *arr, int ln);
 void				ft_pre_sort(t_lst *pre, t_stacks *point);
 void				ft_get_op_b(t_stack **stack);
 void				ft_get_op_a(t_stacks *point);
+void				ft_check_side(t_stacks *point, int gap, t_stack *tmp_b);
+void				ft_check_middle(t_stacks *point, int gap, t_stack *tmp_b);
+
+int					ft_synchrone(int num1, int num2);
+int					ft_check_without_synchrone(t_stack *tmp);
+int					ft_check_with_synchrone(t_stack *tmp);
+int					ft_mod_num(int num);
 
 int					ft_is_gap(t_stack *stack);
+void				ft_use_op(t_stacks *point);
+void				ft_use_operation(t_stack *tmp, t_stacks *point);
+
 
 
 t_stack				*ft_listofstack_create(int a);

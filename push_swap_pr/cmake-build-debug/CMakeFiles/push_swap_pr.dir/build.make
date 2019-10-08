@@ -174,6 +174,32 @@ CMakeFiles/push_swap_pr.dir/pre_sort_stacks.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap_pr.dir/pre_sort_stacks.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ymanilow/curcus42/push_swap/push_swap_pr/pre_sort_stacks.c -o CMakeFiles/push_swap_pr.dir/pre_sort_stacks.c.s
 
+CMakeFiles/push_swap_pr.dir/use_operations.c.o: CMakeFiles/push_swap_pr.dir/flags.make
+CMakeFiles/push_swap_pr.dir/use_operations.c.o: ../use_operations.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ymanilow/curcus42/push_swap/push_swap_pr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/push_swap_pr.dir/use_operations.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap_pr.dir/use_operations.c.o   -c /Users/ymanilow/curcus42/push_swap/push_swap_pr/use_operations.c
+
+CMakeFiles/push_swap_pr.dir/use_operations.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap_pr.dir/use_operations.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ymanilow/curcus42/push_swap/push_swap_pr/use_operations.c > CMakeFiles/push_swap_pr.dir/use_operations.c.i
+
+CMakeFiles/push_swap_pr.dir/use_operations.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap_pr.dir/use_operations.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ymanilow/curcus42/push_swap/push_swap_pr/use_operations.c -o CMakeFiles/push_swap_pr.dir/use_operations.c.s
+
+CMakeFiles/push_swap_pr.dir/functions_for_operations.c.o: CMakeFiles/push_swap_pr.dir/flags.make
+CMakeFiles/push_swap_pr.dir/functions_for_operations.c.o: ../functions_for_operations.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ymanilow/curcus42/push_swap/push_swap_pr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/push_swap_pr.dir/functions_for_operations.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap_pr.dir/functions_for_operations.c.o   -c /Users/ymanilow/curcus42/push_swap/push_swap_pr/functions_for_operations.c
+
+CMakeFiles/push_swap_pr.dir/functions_for_operations.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap_pr.dir/functions_for_operations.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ymanilow/curcus42/push_swap/push_swap_pr/functions_for_operations.c > CMakeFiles/push_swap_pr.dir/functions_for_operations.c.i
+
+CMakeFiles/push_swap_pr.dir/functions_for_operations.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap_pr.dir/functions_for_operations.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ymanilow/curcus42/push_swap/push_swap_pr/functions_for_operations.c -o CMakeFiles/push_swap_pr.dir/functions_for_operations.c.s
+
 # Object files for target push_swap_pr
 push_swap_pr_OBJECTS = \
 "CMakeFiles/push_swap_pr.dir/push_swap.c.o" \
@@ -184,7 +210,9 @@ push_swap_pr_OBJECTS = \
 "CMakeFiles/push_swap_pr.dir/parsing.c.o" \
 "CMakeFiles/push_swap_pr.dir/check_op.c.o" \
 "CMakeFiles/push_swap_pr.dir/filling_op_point.c.o" \
-"CMakeFiles/push_swap_pr.dir/pre_sort_stacks.c.o"
+"CMakeFiles/push_swap_pr.dir/pre_sort_stacks.c.o" \
+"CMakeFiles/push_swap_pr.dir/use_operations.c.o" \
+"CMakeFiles/push_swap_pr.dir/functions_for_operations.c.o"
 
 # External object files for target push_swap_pr
 push_swap_pr_EXTERNAL_OBJECTS =
@@ -198,10 +226,12 @@ push_swap_pr: CMakeFiles/push_swap_pr.dir/parsing.c.o
 push_swap_pr: CMakeFiles/push_swap_pr.dir/check_op.c.o
 push_swap_pr: CMakeFiles/push_swap_pr.dir/filling_op_point.c.o
 push_swap_pr: CMakeFiles/push_swap_pr.dir/pre_sort_stacks.c.o
+push_swap_pr: CMakeFiles/push_swap_pr.dir/use_operations.c.o
+push_swap_pr: CMakeFiles/push_swap_pr.dir/functions_for_operations.c.o
 push_swap_pr: CMakeFiles/push_swap_pr.dir/build.make
 push_swap_pr: ../ft_printf/libftprintf.a
 push_swap_pr: CMakeFiles/push_swap_pr.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ymanilow/curcus42/push_swap/push_swap_pr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking C executable push_swap_pr"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ymanilow/curcus42/push_swap/push_swap_pr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking C executable push_swap_pr"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/push_swap_pr.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

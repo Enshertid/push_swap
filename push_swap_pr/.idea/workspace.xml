@@ -14,6 +14,7 @@
     <list default="true" id="76046281-fa99-4624-83fc-e659be788322" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/ft_printf/libft/libft.a" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ft_printf/libftprintf.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_printf" beforeDir="false" afterPath="$PROJECT_DIR$/ft_printf" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -136,7 +137,7 @@
       <workItem from="1570361544605" duration="5179000" />
       <workItem from="1570433965780" duration="7652000" />
       <workItem from="1570451099137" duration="8898000" />
-      <workItem from="1570519536107" duration="6369000" />
+      <workItem from="1570519536107" duration="7750000" />
     </task>
     <servers />
   </component>
