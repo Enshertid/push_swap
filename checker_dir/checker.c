@@ -6,7 +6,7 @@
 /*   By: ymanilow <ymanilow@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 17:55:24 by ymanilow          #+#    #+#             */
-/*   Updated: 2019/10/12 15:04:33 by ymanilow         ###   ########.fr       */
+/*   Updated: 2019/10/12 18:14:29 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,9 @@ int				main(int ac, char **av)
 	ft_struct_zero(&point);
 	if (!ft_parsing(&point, av, ac))
 		ft_error(&point);
-	if (!ft_check_commands(&point) && !ft_check_sorted_list(point))
+	if (!ft_check_commands(&point))
+		ft_error(&point);
+	if (!ft_check_sorted_list(point) && !point.commands)
 		ft_error(&point);
 	ft_using_commands(&point);
 	if (!ft_check_sorted_list(point))
@@ -30,7 +32,7 @@ int				main(int ac, char **av)
 								ft_printf("OK\n");
 	if (point.comands == 1)
 		point.color == 1 ? ft_printf("%kGs%kRd",
-					"operations used ==> ",point.op) :
+					"operations used ==> ", point.op) :
 					ft_printf("operations used ==> %d", point.op);
 	ft_list_delete(&point);
 	return (0);

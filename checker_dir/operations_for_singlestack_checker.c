@@ -6,7 +6,7 @@
 /*   By: ymanilow <ymanilow@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/09 13:51:11 by ymanilow          #+#    #+#             */
-/*   Updated: 2019/10/11 13:15:49 by ymanilow         ###   ########.fr       */
+/*   Updated: 2019/10/12 17:38:50 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void			ft_swap_stack(t_stack **stack, t_stacks *point, int solo)
 {
 	t_stack *tmp;
 
-	if (stack)
+	if (*stack)
 	{
 		tmp = (*stack)->next;
 		(*stack)->next = tmp->next;
@@ -24,8 +24,10 @@ void			ft_swap_stack(t_stack **stack, t_stacks *point, int solo)
 		*stack = tmp;
 	}
 	if (solo == 1)
+	{
 		point->op++;
-	point->commands = point->commands->next;
+		point->commands = point->commands->next;
+	}
 }
 
 void			ft_push_stack(t_stack **src, t_stack **dst, t_stacks *point)

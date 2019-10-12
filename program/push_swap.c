@@ -6,7 +6,7 @@
 /*   By: ymanilow <ymanilow@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/03 09:58:49 by ymanilow          #+#    #+#             */
-/*   Updated: 2019/10/12 12:45:41 by ymanilow         ###   ########.fr       */
+/*   Updated: 2019/10/12 18:19:16 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,9 @@ int				ft_error(t_stacks *point)
 void			ft_usage(void)
 {
 	ft_printf("%kTs\n%kPs%kRs\n%kTs%kbs\n%kGs\n%kWs\n%kOs\n",
-	"PUSH_SWAP {USAGE}","To use push_swap as usual :\n",
+	"PUSH_SWAP {USAGE}", "To use push_swap as usual :\n",
 	"./push_swap [stack] ||"" ./pus_swap \"[part_of_stack]\""
-	"\"[part_of_stack]\"...\"[part_of_stack]\"","Bonuses:\n",
+	"\"[part_of_stack]\"...\"[part_of_stack]\"", "Bonuses:\n",
 	"./push_swap \"-d\" \"stack\" => Debugger",
 	"./push_swap \"-c\" \"stack\" => Colored Output",
 	"./push_swap \"-f\" \"stack\" => Writing to file",

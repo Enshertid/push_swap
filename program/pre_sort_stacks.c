@@ -6,7 +6,7 @@
 /*   By: ymanilow <ymanilow@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/05 11:27:48 by ymanilow          #+#    #+#             */
-/*   Updated: 2019/10/11 22:51:30 by ymanilow         ###   ########.fr       */
+/*   Updated: 2019/10/12 18:18:27 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,33 @@ void				ft_pre_sort_b(t_stacks *point, t_lst *pre, int num)
 		ft_rotate_stack(&point->stack_a, 1, 1, point);
 }
 
+void				ft_sort_pre(t_stacks *point, t_lst *pre, int type)
+{
+	int		ln;
+
+	ln = ft_check_lenght_of_stack(point->stack_a);
+	if (type == 1)
+		while (ft_check_lenght_of_stack(point->stack_a) > 3)
+		{
+			if (ft_check_lenght_of_stack(point->stack_b) < pre->numb_of_first)
+				ft_pre_sort_b(point, pre, pre->numb_of_first);
+			else if (ft_check_lenght_of_stack(point->stack_b) <
+					pre->numb_of_second)
+				ft_pre_sort_b(point, pre, pre->numb_of_second);
+			else
+				ft_pre_sort_b(point, pre, ln - 1);
+		}
+	else
+		while (ft_check_lenght_of_stack(point->stack_a) > 3)
+		{
+			if (point->stack_a->num != pre->min_stack &&
+				point->stack_a->num != pre->max_stack)
+				ft_push_stack(&point->stack_a, &point->stack_b, 0, point);
+			else
+				ft_rotate_stack(&point->stack_a, 1, 1, point);
+		}
+}
+
 void				ft_pre_sort(t_lst *pre, t_stacks *point)
 {
 	int ln;
@@ -58,14 +85,9 @@ void				ft_pre_sort(t_lst *pre, t_stacks *point)
 	pre->min_stack = pre->array[0];
 	pre->numb_of_first = ln / 3;
 	pre->numb_of_second = ln / 2 + ln / 4;
-	while (ft_check_lenght_of_stack(point->stack_a) > 3)
-	{
-		if (ft_check_lenght_of_stack(point->stack_b) < pre->numb_of_first)
-			ft_pre_sort_b(point, pre, pre->numb_of_first);
-		else if (ft_check_lenght_of_stack(point->stack_b) < pre->numb_of_second)
-			ft_pre_sort_b(point, pre, pre->numb_of_second);
-		else
-			ft_pre_sort_b(point, pre, ln - 1);
-	}
+	if (ft_check_lenght_of_stack(point->stack_a) > 15)
+		ft_sort_pre(point, pre, 1);
+	else
+		ft_sort_pre(point, pre, 0);
 	ft_pre_sort_a(&point->stack_a, point);
 }

@@ -6,7 +6,7 @@
 /*   By: ymanilow <ymanilow@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/12 12:04:27 by ymanilow          #+#    #+#             */
-/*   Updated: 2019/10/12 14:56:54 by ymanilow         ###   ########.fr       */
+/*   Updated: 2019/10/12 18:13:49 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int				ft_check_sorted_list(t_stacks point)
 	return (1);
 }
 
-int			ft_check_first_ac(t_stacks *point, char *str)
+int				ft_check_first_ac(t_stacks *point, char *str)
 {
 	if (!ft_strcmp("-d", str)
 		|| !ft_strcmp("-c", str) ||
@@ -62,11 +62,11 @@ int			ft_check_first_ac(t_stacks *point, char *str)
 void			ft_usage(void)
 {
 	ft_printf("%kTs\n%kPs%kRs\n%kTs%kbs\n%kGs\n",
-			  "CHECKER {USAGE}","To use checker as usual :\n",
-			  "./checker [stack] ||"" ./checker \"[part_of_stack]\""
-			  "\"[part_of_stack]\"...\"[part_of_stack]\"","Bonuses:\n",
-			  "./checker \"-c\" \"stack\" => Colored Output",
-			  "./checker \"-k\" \"stack\" => Output number of commands");
+			"CHECKER {USAGE}", "To use checker as usual :\n",
+			"./checker [stack] ||"" ./checker \"[part_of_stack]\""
+			"\"[part_of_stack]\"...\"[part_of_stack]\"", "Bonuses:\n",
+			"./checker \"-c\" \"stack\" => Colored Output",
+			"./checker \"-k\" \"stack\" => Output number of commands");
 	exit(0);
 }
 
