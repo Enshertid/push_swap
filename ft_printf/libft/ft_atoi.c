@@ -6,13 +6,13 @@
 /*   By: user <user@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/08 20:12:17 by dbendu            #+#    #+#             */
-/*   Updated: 2019/08/12 13:28:01 by user             ###   ########.fr       */
+/*   Updated: 2019/10/09 16:57:37 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *str)
+long int	ft_atoi(const char *str)
 {
 	long long int	res;
 	short int		sign;

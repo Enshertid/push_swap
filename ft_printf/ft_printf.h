@@ -6,13 +6,16 @@
 /*   By: user <user@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/22 14:17:47 by ymanilow          #+#    #+#             */
-/*   Updated: 2019/09/17 17:24:54 by ymanilow         ###   ########.fr       */
+/*   Updated: 2019/10/11 18:55:37 by ymanilow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
+# include <sys/types.h>
+# include <sys/stat.h>
+# include <fcntl.h>
 # include <stdlib.h>
 # include <stdarg.h>
 # include "libft/includes/libft.h"
